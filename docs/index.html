@@ -2,6 +2,8 @@
 <title>MRI of a Mad Machine · The Structural Origins of Hallucination</title><meta name="description" content="MRI of a Mad Machine · The Structural Origins of Hallucination">
 <meta property="og:title" content="MRI of a Mad Machine · The Structural Origins of Hallucination"><meta property="og:image" content="assets/hero-dark.svg">
 <style>
+nav{position:sticky;top:0;z-index:5;background:rgba(6,8,12,.92);backdrop-filter:blur(6px);border-bottom:1px solid #1C2531;text-align:center;padding:10px 8px;font:12px/1.6 JetBrains Mono,Consolas,monospace;letter-spacing:1px}
+nav a{color:#8B98A7;text-decoration:none;margin:0 10px}nav a.on{color:#6FE3D3}nav a:hover{color:#ECF0F3}
 :root{color-scheme:dark}body{margin:0;background:#06080C;color:#D9E0E7;font:16px/1.65 Inter,Segoe UI,system-ui,sans-serif}
 main{max-width:1240px;margin:0 auto;padding:28px 20px 80px}img{max-width:100%;height:auto}a{color:#6FE3D3}
 h3{font-family:Georgia,serif;font-size:28px;color:#ECF0F3}table{border-collapse:collapse;width:100%;margin:14px 0;font-size:15px}
@@ -11,7 +13,7 @@ blockquote{border-left:3px solid #FF5D4F;background:#0E131A;margin:16px 0;paddin
 details{background:#0E131A;border:1px solid #1C2531;border-radius:10px;padding:10px 16px;margin:14px 0}summary{cursor:pointer;color:#ECF0F3}
 #viewer{background:radial-gradient(circle at 50% 45%,#0f2a2a,#06080C 70%);border:1px solid #1C2531;border-radius:16px;padding:10px;text-align:center}
 #cv{width:100%;max-width:900px;cursor:grab;touch-action:none}.cap{color:#8B98A7;font:12px Consolas,monospace;letter-spacing:1px;padding:6px}
-</style></head><body><main><div align="center">
+</style></head><body><nav><a href="index.html" class="on">THESIS</a><a href="study-a.html">STUDY A</a><a href="study-b.html">STUDY B</a><a href="study-c.html">STUDY C</a><a href="intro.html">INTRO EXAMPLE</a><a href="verification.html">VERIFICATION</a><a href="https://github.com/RejaulKorimSadi/MRI-of-a-Mad-Machine">GITHUB ↗</a></nav><main><div align="center">
 
 <picture>
   
@@ -24,7 +26,7 @@ details{background:#0E131A;border:1px solid #1C2531;border-radius:10px;padding:1
 <p><a href="https://github.com/RejaulKorimSadi/MRI-of-a-Mad-Machine/blob/HEAD/thesis/MRI_of_a_Mad_Machine_Thesis.pdf"><img alt="Thesis PDF" src="https://img.shields.io/badge/READ_THE_THESIS-PDF_·_37_pages-FF5D4F?style=for-the-badge&labelColor=0E131A"></a>
 <a href="#08-every-number-is-checked"><img alt="Verified" src="https://img.shields.io/badge/NUMBERS_RE--VERIFIED-132_%2F_132-6FE3D3?style=for-the-badge&labelColor=0E131A"></a>
 <a href="https://doi.org/10.17605/OSF.IO/CS967"><img alt="OSF" src="https://img.shields.io/badge/STUDY_C-PRE--REGISTERED_·_OSF-F2B460?style=for-the-badge&labelColor=0E131A"></a>
-<a href="#09-inside-this-package"><img alt="Open data" src="https://img.shields.io/badge/DATA_+_CODE-OPEN-7AA7FF?style=for-the-badge&labelColor=0E131A"></a>
+<a href="#09-inside-this-repository"><img alt="Open data" src="https://img.shields.io/badge/DATA_+_CODE-OPEN-7AA7FF?style=for-the-badge&labelColor=0E131A"></a>
 <a href="https://rejaulkorimsadi.github.io/MRI-of-a-Mad-Machine/"><img alt="Website" src="https://img.shields.io/badge/WEBSITE-3D_VIEW-ECF0F3?style=for-the-badge&labelColor=0E131A"></a></p>
 <p><sub><b>B.Sc. thesis</b> · Department of Computer Science and
 Engineering · Metropolitan University, Sylhet · November 2026</sub></p>
@@ -37,6 +39,12 @@ Engineering · Metropolitan University, Sylhet · November 2026</sub></p>
 <a href="#08-every-number-is-checked">Verification</a> ·
 <a href="#3d-model">3D model</a> ·
 <a href="#10-reproduce-it">Reproduce</a></sub></p>
+<p><sub><b>Full study pages:</b>
+<a href="study-a.html">Study A · The Attention
+Ablation Test</a> · <a href="study-b.html">Study
+B · Commitment repair</a> ·
+<a href="study-c.html">Study C · Confidence
+and identity</a> · <a href="verification.html">Verification</a></sub></p>
 </div>
 
 <br>
@@ -260,6 +268,14 @@ model knows, <strong>even when the model knew better.</strong> Attention
 is the machinery of context grounding, and that machinery cuts both
 ways: it is what makes retrieval work when the text is true, and a
 direct route to confident error when it is false.</p>
+<blockquote>
+<p><b class="imp">TIP</b> <strong>Full study page: <a
+href="study-a.html">The Attention Ablation Test
+→</a></strong> Design figure, publication figure, both architectures in
+3D, the 24-fact pilot record, a notebook and a guide to every file. This
+study used to live in its own repository; it is now part of this
+one.</p>
+</blockquote>
 <br>
 
 <p><a id="05-study-b--commitment"></a> <picture></p>
@@ -318,6 +334,12 @@ anything at all and about half of them disappear. The model was not
 hiding the truth: on these long-tail questions it never knew the answer.
 Repairing an answer at the point of divergence works even without
 supplying the truth.</p>
+<blockquote>
+<p><b class="imp">TIP</b> <strong>Full study page: <a
+href="study-b.html">Study B · Repairing the first
+wrong fact →</a></strong> Conditions, scoring columns, both annotators
+and the commands that reproduce every number.</p>
+</blockquote>
 <br>
 
 <p><a id="06-study-c--the-surface"></a> <picture></p>
@@ -379,6 +401,12 @@ physician, researcher)</td>
 guess, and the wording barely changes. Hedging is not a usable warning
 sign. Evaluations should score clarification as a good outcome rather
 than read confidence from tone.</p>
+<blockquote>
+<p><b class="imp">TIP</b> <strong>Full study page: <a
+href="study-c.html">Study C · Confidence
+and identity →</a></strong> The registration, scoring rubric, prompt
+taxonomy, raw outputs and both raters' sheets.</p>
+</blockquote>
 <br>
 
 <p><a id="07-how-a-confident-error-is-assembled"></a> <picture></p>
@@ -462,22 +490,35 @@ href="https://github.com/RejaulKorimSadi/MRI-of-a-Mad-Machine/blob/HEAD/assets/m
 
 <br>
 
-<p><a id="09-inside-this-package"></a> <picture></p>
+<p><a id="09-inside-this-repository"></a> <picture></p>
   
   
-  <img src="assets/d09-dark.svg" width="100%" alt="09 Inside this package">
+  <img src="assets/d09-dark.svg" width="100%" alt="09 Inside this repository">
 </picture>
+
+<picture>
+  
+  
+  <img src="assets/atlas-dark.svg" width="100%" alt="Repository atlas: thesis, three studies, introduction example, verification, website and 3D models">
+</picture>
+
+<details>
+<summary><b>Full file tree</b></summary>
 
 <pre class="text"><code>MRI-of-a-Mad-Machine/
 ├── README.md                          this page (light and dark artwork)
-├── docs/                              the same page as a website (GitHub Pages)
+├── docs/                              this page and the three study pages as a website
 ├── thesis/
 │   ├── MRI_of_a_Mad_Machine_Thesis.pdf        the thesis, 37 pages
 │   └── source/                        LaTeX, figure scripts, figures, ledger generator
 ├── evidence/
-│   ├── study_A_attention_ablation/    free recall (outputs, blind sheet, two annotators)
-│   │                                  + 14-model context probe (999 items x 14, scored)
-│   │                                  + 24-fact pilot kept for the record
+│   ├── study_A_attention_ablation/    THE ATTENTION ABLATION TEST (own page, own 3D model)
+│   │   ├── code/, data/               free recall: outputs, blind sheet, two annotators
+│   │   ├── study1b/                   14-model context probe (999 items x 14, scored)
+│   │   ├── study1b_pilot/             24-fact pilot kept for the record
+│   │   ├── figures/                   publication figures (PNG + PDF)
+│   │   ├── notebooks/                 notebook mirror of the free-recall setup
+│   │   └── assets/                    artwork, turntable and STL for the study page
 │   ├── study_B_commitment_repair/     111 items, 4 conditions, baselines, both annotators
 │   ├── study_C_confidence_and_identity/  prompts, probes, raw outputs, scoring sheets, code
 │   └── introduction_example/          the GPT-2 &quot;Paul Graham&quot; output
@@ -491,6 +532,8 @@ href="https://github.com/RejaulKorimSadi/MRI-of-a-Mad-Machine/blob/HEAD/assets/m
     ├── turntable-*.gif                the machine rotating in 3D
     ├── mri_machine_3d.stl             3D model (GitHub opens it in a 3D viewer)
     └── source/                        Python that generates every SVG and the STL</code></pre>
+</details>
+
 <details>
 <summary><b>Thesis chapters</b></summary>
 
@@ -562,6 +605,9 @@ class="sourceCode powershell"><code class="sourceCode powershell"><span id="cb3-
 <code>pdflatex</code>):</p>
 <div class="sourceCode" id="cb4"><pre
 class="sourceCode powershell"><code class="sourceCode powershell"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cd</span> thesis\source<span class="op">;</span> py make_ledger_tex<span class="op">.</span><span class="fu">py</span><span class="op">;</span> pdflatex main<span class="op">.</span><span class="fu">tex</span><span class="op">;</span> pdflatex main<span class="op">.</span><span class="fu">tex</span><span class="op">;</span> pdflatex main<span class="op">.</span><span class="fu">tex</span></span></code></pre></div>
+<p>Recompute Study A on its own (no GPU needed):</p>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode powershell"><code class="sourceCode powershell"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cd</span> evidence\study_A_attention_ablation<span class="op">;</span> py code\analyze_study1a<span class="op">.</span><span class="fu">py</span><span class="op">;</span> <span class="fu">cd</span> study1b<span class="op">;</span> py code\analyze_probe<span class="op">.</span><span class="fu">py</span><span class="op">;</span> py code\controls_known_facts<span class="op">.</span><span class="fu">py</span><span class="op">;</span> <span class="fu">cd</span> <span class="op">..</span>\<span class="op">..</span>\<span class="op">..</span></span></code></pre></div>
 <p>Re-run the architecture study itself: see <a
 href="https://github.com/RejaulKorimSadi/MRI-of-a-Mad-Machine/blob/HEAD/evidence/study_A_attention_ablation/study1b/README.md"><code>evidence/study_A_attention_ablation/study1b/README.md</code></a>.
 All 14 models fit on one 8 GB GPU (about 3–4 hours in total).</p>
@@ -592,9 +638,10 @@ Identity-Conditioned Behaviour in Large Language Models.</em> Under
 review, PeerJ Computer Science. OSF registration <a
 href="https://doi.org/10.17605/OSF.IO/CS967">10.17605/OSF.IO/CS967</a>.
 Study C.</li>
-<li><strong>Architecture study repository:</strong> <a
-href="https://github.com/RejaulKorimSadi/The-Attention-Ablation-Test">The
-Attention Ablation Test</a>.</li>
+<li><strong>The Attention Ablation Test</strong> used to be a separate
+repository. It is now <a
+href="study-a.html">Study A in this
+repository</a>, and the old address points here.</li>
 </ul>
 <p><sub>Code: MIT (<a href="https://github.com/RejaulKorimSadi/MRI-of-a-Mad-Machine/blob/HEAD/LICENSE"><code>LICENSE</code></a>). Data and
 figures: CC BY 4.0 (<a

@@ -24,7 +24,7 @@ Each output file stores the full item record, including the prompt, next to the 
 Reproduce:
 
 ```
-cd study1_architecture/study1b_pilot
+cd study1b_pilot
 python stage1b_analyze.py --pythia s1b_p28.json --mamba s1b_m28.json
 python stage1b_analyze.py --pythia s1b_p14.json --mamba s1b_m14.json
 python stage1b_survey.py --attn s1b_p28.json s1b_p14.json s1b_qwen.json --noattn s1b_m28.json s1b_m14.json

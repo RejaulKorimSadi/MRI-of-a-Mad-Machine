@@ -27,12 +27,12 @@ DIVS = [
     ('d01', '01', 'The claim', 'Errors are not one thing. Different parts of the machine make them, then hide them.', 'red'),
     ('d02', '02', 'The scan result', 'Three components, three measured roles: one admits the defect, one spreads it, one hides it.', 'teal'),
     ('d03', '03', 'How the scan works', 'Hold everything fixed, change one part, score blind, recompute every number from raw files.', 'amber'),
-    ('d04', '04', 'Study A · Attention', 'Does a false sentence in the input win over what the model knows?', 'red'),
+    ('d04', '04', 'Study A · Attention', 'The Attention Ablation Test: does a false sentence in the input win over what the model knows?', 'red'),
     ('d05', '05', 'Study B · Commitment', 'If you repair the first wrong fact, do the later errors disappear?', 'amber'),
     ('d06', '06', 'Study C · The surface', 'When information is missing, can the user tell the answer is a guess?', 'teal'),
     ('d07', '07', 'How a confident error is assembled', 'The three results, read together as one account.', 'red'),
     ('d08', '08', 'Every number is checked', 'One script reads the released raw files and recomputes 132 reported figures.', 'teal'),
-    ('d09', '09', 'Inside this package', 'Thesis, evidence, verification and visuals: what each folder holds.', 'amber'),
+    ('d09', '09', 'Inside this repository', 'One thesis, three studies, every file: what each folder holds.', 'amber'),
     ('d10', '10', 'Reproduce it', 'Two commands on Windows. One 8 GB laptop GPU was enough for the architecture study.', 'teal'),
     ('d11', '11', 'Team and research', 'Built on two first-author manuscripts under review.', 'amber'),
 ]
@@ -409,6 +409,51 @@ def team(P, mode):
     return svg(W, H, ''.join(b), P, title='Team')
 
 
+# ------------------------------------------------------------ atlas
+def atlas(P, mode):
+    W, H = 1200, 566
+    b = [frame(W, H, P, 18), corners(W, H, P)]
+    rows = [
+        ('thesis/', 'The thesis: 37-page PDF and its LaTeX source', '37 pages', P['red']),
+        ('evidence/study_A_attention_ablation/', 'Study A · The Attention Ablation Test', '14 models', P['teal']),
+        ('evidence/study_B_commitment_repair/', 'Study B · Repairing the first wrong fact', '111 answers', P['amber']),
+        ('evidence/study_C_confidence_and_identity/', 'Study C · Guessing when information is missing', '5,620 responses', P['blue']),
+        ('evidence/introduction_example/', 'The GPT-2 "the late Paul Graham" example', '15 prompts', P['red']),
+        ('verification/', 'One script recomputes every reported number', '132 / 132', P['teal']),
+        ('docs/  ·  assets/', 'Website, two 3D models and all page artwork', 'live site', P['amber']),
+    ]
+    n = len(rows)
+    b.append(f'<text x="310" y="58" class="m tl" font-size="12" letter-spacing="2.4">REPOSITORY ATLAS · ONE THESIS, THREE STUDIES, EVERY FILE</text>')
+    S, hh, dz = 90, 14, 60
+    ox, oy = 168, 434 + (n - 7) * 0
+    cy0, rh = 112, 60
+    cyc = 0.9 * n
+    stack = []
+    for i in reversed(range(n)):
+        col = rows[i][3]
+        z = (n - 1 - i) * dz
+        stack.append(ibox(ox, oy, 0, 0, z, S, S, hh, col, P))
+        anim = '' if STATIC else f'<animate attributeName="opacity" values="0;0;.55;0;0" keyTimes="0;{i/n:.3f};{(i+.5)/n:.3f};{(i+1)/n:.3f};1" dur="{cyc:.1f}s" repeatCount="indefinite"/>'
+        stack.append(f'<path d="{itop(ox, oy, 0, 0, z+hh, S, S)}" fill="{P["ink"]}" opacity="0">{anim}</path>')
+    b.append(f'<g class="float">{"".join(stack)}</g>')
+    xr = ox + S * C30
+    for i, (path, desc, stat, col) in enumerate(rows):
+        cy = cy0 + i * rh
+        z = (n - 1 - i) * dz
+        py = oy + S * S30 - z - hh / 2
+        ranim = '' if STATIC else f'<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;{i/n:.3f};{(i+.5)/n:.3f};{(i+1)/n:.3f};1" dur="{cyc:.1f}s" repeatCount="indefinite"/>'
+        b.append(f'<g class="rise" style="animation-delay:{.1+i*.12:.2f}s">'
+                 f'<rect x="296" y="{cy-27}" width="{W-326}" height="54" rx="10" fill="{P["panel2"]}" opacity="0">{ranim}</rect>'
+                 f'<path d="M{xr+6:.1f} {py:.1f}H286" stroke="{col}" stroke-width="1.2" stroke-dasharray="3 4" opacity=".8"/>'
+                 f'<circle cx="{xr+6:.1f}" cy="{py:.1f}" r="3" fill="{col}"/>'
+                 f'<rect x="306" y="{cy-5}" width="10" height="10" rx="2" fill="{col}"/>'
+                 f'<text x="330" y="{cy-4}" class="m" font-size="12.5" fill="{col}">{e(path)}</text>'
+                 f'<text x="330" y="{cy+17}" class="s mut" font-size="14.5">{e(desc)}</text>'
+                 f'<text x="{W-44}" y="{cy+8}" class="d" font-size="22" font-weight="600" text-anchor="end" fill="{col}">{e(stat)}</text>'
+                 + (f'<path d="M296 {cy+30}H{W-30}" stroke="{P["line"]}"/>' if i < n - 1 else '') + '</g>')
+    return svg(W, H, ''.join(b), P, title='Repository atlas')
+
+
 if __name__ == '__main__':
     for k, n, l, s, a in DIVS:
         write(OUT, k, divider(n, l, s, a))
@@ -420,3 +465,4 @@ if __name__ == '__main__':
     write(OUT, 'assembly', assembly)
     write(OUT, 'verify', verify)
     write(OUT, 'team', team)
+    write(OUT, 'atlas', atlas)

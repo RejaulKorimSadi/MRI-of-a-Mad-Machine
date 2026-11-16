@@ -1,0 +1,185 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Confidence and identity · Study C of MRI of a Mad Machine</title><meta name="description" content="Confidence and identity · Study C of MRI of a Mad Machine">
+<meta property="og:title" content="Confidence and identity · Study C of MRI of a Mad Machine"><meta property="og:image" content="assets/hero-dark.svg">
+<style>
+nav{position:sticky;top:0;z-index:5;background:rgba(6,8,12,.92);backdrop-filter:blur(6px);border-bottom:1px solid #1C2531;text-align:center;padding:10px 8px;font:12px/1.6 JetBrains Mono,Consolas,monospace;letter-spacing:1px}
+nav a{color:#8B98A7;text-decoration:none;margin:0 10px}nav a.on{color:#6FE3D3}nav a:hover{color:#ECF0F3}
+:root{color-scheme:dark}body{margin:0;background:#06080C;color:#D9E0E7;font:16px/1.65 Inter,Segoe UI,system-ui,sans-serif}
+main{max-width:1240px;margin:0 auto;padding:28px 20px 80px}img{max-width:100%;height:auto}a{color:#6FE3D3}
+h3{font-family:Georgia,serif;font-size:28px;color:#ECF0F3}table{border-collapse:collapse;width:100%;margin:14px 0;font-size:15px}
+th,td{border:1px solid #1C2531;padding:8px 12px;text-align:left}th{background:#0E131A;color:#ECF0F3}tr:nth-child(even) td{background:#0B1016}
+pre{background:#0E131A;border:1px solid #1C2531;border-radius:10px;padding:14px;overflow:auto}code{font-family:JetBrains Mono,Consolas,monospace;font-size:13.5px;color:#F2B460}
+blockquote{border-left:3px solid #FF5D4F;background:#0E131A;margin:16px 0;padding:10px 18px;border-radius:0 10px 10px 0}.imp{color:#FF5D4F;letter-spacing:2px;font-size:12px}
+details{background:#0E131A;border:1px solid #1C2531;border-radius:10px;padding:10px 16px;margin:14px 0}summary{cursor:pointer;color:#ECF0F3}
+#viewer{background:radial-gradient(circle at 50% 45%,#0f2a2a,#06080C 70%);border:1px solid #1C2531;border-radius:16px;padding:10px;text-align:center}
+#cv{width:100%;max-width:900px;cursor:grab;touch-action:none}.cap{color:#8B98A7;font:12px Consolas,monospace;letter-spacing:1px;padding:6px}
+</style></head><body><nav><a href="index.html">THESIS</a><a href="study-a.html">STUDY A</a><a href="study-b.html">STUDY B</a><a href="study-c.html" class="on">STUDY C</a><a href="intro.html">INTRO EXAMPLE</a><a href="verification.html">VERIFICATION</a><a href="https://github.com/RejaulKorimSadi/MRI-of-a-Mad-Machine">GITHUB ↗</a></nav><main><div align="center">
+
+<p><sub><a href="index.html">MRI of a Mad Machine</a> ›
+<a href="index.html#09-inside-this-repository">evidence</a> › <b>Study C ·
+Confidence and identity</b></sub></p>
+<picture>
+  
+  
+  <img src="assets/d06-dark.svg" width="100%" alt="Study C: the surface">
+</picture>
+
+<p><a href="https://doi.org/10.17605/OSF.IO/CS967"><img alt="OSF" src="https://img.shields.io/badge/PRE--REGISTERED-OSF_·_10.17605%2FOSF.IO%2FCS967-F2B460?style=for-the-badge&labelColor=0E131A"></a></p>
+</div>
+
+<p><strong>Question.</strong> When a question is missing information, do
+models ask, or guess? And if they guess, can the user tell?</p>
+<p><strong>Design.</strong> Registered on OSF <strong>before any
+response was scored</strong> (<a
+href="https://doi.org/10.17605/OSF.IO/CS967">10.17605/OSF.IO/CS967</a>).
+Five open-weight models from four organisations (Gemma 3 27B, Gemma 4
+31B, gpt-oss-120b, Qwen3-Next-80B-A3B, Nemotron 3 Super) at temperature
+0. 142 factual questions, each in a fully specified form and with its
+key referent removed (same answer key), plus three identity probes.
+5,620 responses scored blind by two raters (κ = 0.853 for correctness,
+1.00 for verbal uncertainty).</p>
+<picture>
+  
+  
+  <img src="assets/study_c-dark.svg" width="100%" alt="Study C results: error rises, tone does not">
+</picture>
+
+<table>
+<thead>
+<tr class="header">
+<th>Finding</th>
+<th>Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Referent removed: models ask for clarification</td>
+<td>33.7% of prompts</td>
+</tr>
+<tr class="even">
+<td>Error among attempted answers, intact → referent removed</td>
+<td><strong>39.1% → 52.0%</strong> (mixed-effects OR 4.12, 95% CI
+2.76–6.14)</td>
+</tr>
+<tr class="odd">
+<td>Wrong answers that carry <strong>no hedge</strong></td>
+<td><strong>75.3%</strong></td>
+</tr>
+<tr class="even">
+<td>How well hedging separates right from wrong (0.5 = chance)</td>
+<td><strong>AUROC 0.56</strong></td>
+</tr>
+<tr class="odd">
+<td>Same 50 questions, the user claims an identity</td>
+<td>mean answer length 188 words (anonymous) vs 259–268 (patient,
+physician, researcher)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><b class="imp">IMPORTANT</b> When information is missing, models usually guess, and
+the wording barely changes. Hedging is not a usable warning sign.
+Evaluations should score clarification as a good outcome rather than
+read confidence from tone.</p>
+</blockquote>
+<p><strong>Scope.</strong> All three studies measure behaviour through
+sampling, so the claims concern what each component does, not the
+internal circuit that does it. These are instruction-tuned models served
+through APIs.</p>
+<br>
+
+<h3 id="files">Files</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Folder</th>
+<th>Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>data/prompts/</code></td>
+<td>Prompt set and question sources</td>
+</tr>
+<tr class="even">
+<td><code>data/probes/</code></td>
+<td>Pronoun, authority and safety probes</td>
+</tr>
+<tr class="odd">
+<td><code>data/raw_outputs/</code></td>
+<td>Every model response</td>
+</tr>
+<tr class="even">
+<td><code>data/scoring/</code></td>
+<td>Both raters' scoring sheets, the blind key and the 600-response
+overlap list</td>
+</tr>
+<tr class="odd">
+<td><code>docs/</code></td>
+<td><a href="https://github.com/RejaulKorimSadi/MRI-of-a-Mad-Machine/blob/HEAD/evidence/study_C_confidence_and_identity/docs/preregistration.md">Pre-registration</a>, <a
+href="https://github.com/RejaulKorimSadi/MRI-of-a-Mad-Machine/blob/HEAD/evidence/study_C_confidence_and_identity/docs/scoring_rubric.md">scoring rubric</a>, <a
+href="https://github.com/RejaulKorimSadi/MRI-of-a-Mad-Machine/blob/HEAD/evidence/study_C_confidence_and_identity/docs/prompt_taxonomy.md">prompt taxonomy</a></td>
+</tr>
+<tr class="even">
+<td><code>code/</code></td>
+<td>Sampling, collection, agreement and analysis scripts</td>
+</tr>
+<tr class="odd">
+<td><code>results/</code></td>
+<td>Inter-rater agreement report</td>
+</tr>
+</tbody>
+</table>
+<h3 id="two-sets-of-figures-one-conclusion">Two sets of figures, one
+conclusion</h3>
+<p>The scoring sheets carry the original correctness labels, and
+<code>code/run_analysis.py</code> reproduces the figures they support:
+error 39.9% (intact) and 66.7% (referent removed), and 77.4% of wrong
+answers unhedged. The thesis reports those as a robustness check. The
+headline figures above (39.1% and 52.0%, 75.3% unhedged, AUROC 0.56)
+come from the final registered analysis, which treats a pure
+clarification request as an abstention rather than an error, as the
+rubric specifies, after a label-validity check of all 468 replies
+containing clarification or refusal language. Both versions lead to the
+same conclusion.</p>
+<h3 id="reproduce">Reproduce</h3>
+<p>PowerShell, inside
+<code>evidence\study_C_confidence_and_identity</code>, no GPU or API
+needed:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode powershell"><code class="sourceCode powershell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>py <span class="op">-</span>m pip install <span class="op">-</span>r requirements<span class="op">.</span><span class="fu">txt</span><span class="op">;</span> py code\compute_kappa<span class="op">.</span><span class="fu">py</span><span class="op">;</span> py code\run_analysis<span class="op">.</span><span class="fu">py</span></span></code></pre></div>
+<p>The last lines list each registered hypothesis with its adjusted
+p-value (for example
+<code>H1_clarity adj_p=2.4e-23 significant</code>).</p>
+<br>
+
+<div align="center">
+
+<p><sub><a href="study-a.html">Study A · The Attention
+Ablation Test</a> · <a href="study-b.html">Study B ·
+Commitment repair</a> · <b>Study C · Confidence and identity</b> ·
+<a href="verification.html">Verification</a> ·
+<a href="https://github.com/RejaulKorimSadi/MRI-of-a-Mad-Machine/blob/HEAD/thesis/MRI_of_a_Mad_Machine_Thesis.pdf">Thesis
+PDF</a></sub></p>
+</div>
+
+<p style="text-align:center;color:#8B98A7;font-size:13px">Source, data and code: <a href="https://github.com/RejaulKorimSadi/MRI-of-a-Mad-Machine">github.com/RejaulKorimSadi/MRI-of-a-Mad-Machine</a></p></main>
+<script type="text/plain" id="stl"></script>
+<script>
+(function(){const cv=document.getElementById('cv');if(!cv)return;const cx=cv.getContext('2d');
+const V=[...document.getElementById('stl').textContent.matchAll(/vertex\s+(\S+)\s+(\S+)\s+(\S+)/g)].map(m=>[+m[1],+m[2],+m[3]]);const T=[];for(let i=0;i<V.length;i+=3)T.push([V[i],V[i+1],V[i+2]]);
+const towers=false;
+function col(t){const z=(t[0][2]+t[1][2]+t[2][2])/3,x=(t[0][0]+t[1][0]+t[2][0])/3;
+ if(!towers){if(z<=10)return[255,93,79];if(z<36)return[111,227,211];if(z<=48.5)return[242,180,96];return[255,93,79];}
+ if(z<0)return[76,88,103];const l=Math.floor(z/11);if(!(l===1||l===3||l===4))return[88,100,116];return x<0?[255,93,79]:[111,227,211];}
+let ry=.6,rx=.5,sc=3.4,drag=null;
+cv.addEventListener('pointerdown',e=>{drag=[e.clientX,e.clientY,ry,rx];cv.setPointerCapture(e.pointerId)});
+cv.addEventListener('pointermove',e=>{if(drag){ry=drag[2]+(e.clientX-drag[0])*.01;rx=Math.max(-.2,Math.min(1.3,drag[3]+(e.clientY-drag[1])*.01))}});
+cv.addEventListener('pointerup',()=>drag=null);cv.addEventListener('wheel',e=>{e.preventDefault();sc=Math.max(1.5,Math.min(7,sc*(e.deltaY<0?1.1:.9)))},{passive:false});
+function f(){if(!drag)ry+=.005;cx.clearRect(0,0,cv.width,cv.height);const a=Math.cos(ry),b=Math.sin(ry),c=Math.cos(rx),d=Math.sin(rx);
+const P=p=>{let x=p[0],y=p[1],z=p[2]-22;let x1=x*a-y*b,y1=x*b+y*a;return[x1,y1*c-z*d,y1*d+z*c]};const L=[.35,-.55,.75];
+const F=T.map(t=>{const q=t.map(P);const u=[q[1][0]-q[0][0],q[1][1]-q[0][1],q[1][2]-q[0][2]],v=[q[2][0]-q[0][0],q[2][1]-q[0][1],q[2][2]-q[0][2]];let n=[u[1]*v[2]-u[2]*v[1],u[2]*v[0]-u[0]*v[2],u[0]*v[1]-u[1]*v[0]];const l=Math.hypot(...n)||1;n=n.map(k=>k/l);return{q,d:(q[0][1]+q[1][1]+q[2][1])/3,n,c:col(t)}});
+F.sort((p,q)=>q.d-p.d);const ox=cv.width/2,oy=cv.height/2+10;
+for(const g of F){const lt=.32+.68*Math.abs(g.n[0]*L[0]+g.n[1]*L[1]+g.n[2]*L[2]);const s=`rgb(${g.c.map(k=>Math.round(k*lt)).join(',')})`;cx.fillStyle=s;cx.strokeStyle=s;cx.beginPath();cx.moveTo(ox+g.q[0][0]*sc,oy-g.q[0][2]*sc);cx.lineTo(ox+g.q[1][0]*sc,oy-g.q[1][2]*sc);cx.lineTo(ox+g.q[2][0]*sc,oy-g.q[2][2]*sc);cx.closePath();cx.fill();cx.stroke();}
+requestAnimationFrame(f)}f();})();
+</script></body></html>

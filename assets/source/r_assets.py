@@ -3,7 +3,7 @@ sys.path.insert(0, __import__('os').path.dirname(__import__('os').path.abspath(_
 from lib import *
 import t_assets as T
 
-OUT = sys.argv[1] if len(sys.argv) > 1 else '../repo'
+OUT = sys.argv[1] if len(sys.argv) > 1 else '../../evidence/study_A_attention_ablation/assets'
 
 
 def tower(ox, oy, P, col, n=5, S=86, hh=16, gp=10, label='', sub=''):

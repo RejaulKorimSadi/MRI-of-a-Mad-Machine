@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The GPT-2 example · MRI of a Mad Machine</title><meta name="description" content="The GPT-2 example · MRI of a Mad Machine">
+<meta property="og:title" content="The GPT-2 example · MRI of a Mad Machine"><meta property="og:image" content="assets/hero-dark.svg">
+<style>
+nav{position:sticky;top:0;z-index:5;background:rgba(6,8,12,.92);backdrop-filter:blur(6px);border-bottom:1px solid #1C2531;text-align:center;padding:10px 8px;font:12px/1.6 JetBrains Mono,Consolas,monospace;letter-spacing:1px}
+nav a{color:#8B98A7;text-decoration:none;margin:0 10px}nav a.on{color:#6FE3D3}nav a:hover{color:#ECF0F3}
+:root{color-scheme:dark}body{margin:0;background:#06080C;color:#D9E0E7;font:16px/1.65 Inter,Segoe UI,system-ui,sans-serif}
+main{max-width:1240px;margin:0 auto;padding:28px 20px 80px}img{max-width:100%;height:auto}a{color:#6FE3D3}
+h3{font-family:Georgia,serif;font-size:28px;color:#ECF0F3}table{border-collapse:collapse;width:100%;margin:14px 0;font-size:15px}
+th,td{border:1px solid #1C2531;padding:8px 12px;text-align:left}th{background:#0E131A;color:#ECF0F3}tr:nth-child(even) td{background:#0B1016}
+pre{background:#0E131A;border:1px solid #1C2531;border-radius:10px;padding:14px;overflow:auto}code{font-family:JetBrains Mono,Consolas,monospace;font-size:13.5px;color:#F2B460}
+blockquote{border-left:3px solid #FF5D4F;background:#0E131A;margin:16px 0;padding:10px 18px;border-radius:0 10px 10px 0}.imp{color:#FF5D4F;letter-spacing:2px;font-size:12px}
+details{background:#0E131A;border:1px solid #1C2531;border-radius:10px;padding:10px 16px;margin:14px 0}summary{cursor:pointer;color:#ECF0F3}
+#viewer{background:radial-gradient(circle at 50% 45%,#0f2a2a,#06080C 70%);border:1px solid #1C2531;border-radius:16px;padding:10px;text-align:center}
+#cv{width:100%;max-width:900px;cursor:grab;touch-action:none}.cap{color:#8B98A7;font:12px Consolas,monospace;letter-spacing:1px;padding:6px}
+</style></head><body><nav><a href="index.html">THESIS</a><a href="study-a.html">STUDY A</a><a href="study-b.html">STUDY B</a><a href="study-c.html">STUDY C</a><a href="intro.html" class="on">INTRO EXAMPLE</a><a href="verification.html">VERIFICATION</a><a href="https://github.com/RejaulKorimSadi/MRI-of-a-Mad-Machine">GITHUB ↗</a></nav><main><div align="center">
+
+<p><sub><a href="index.html">MRI of a Mad Machine</a> ›
+<a href="index.html#09-inside-this-repository">evidence</a> ›
+<b>Introduction example</b></sub></p>
+<picture>
+  
+  
+  <img src="assets/d01-dark.svg" width="100%" alt="The claim">
+</picture>
+
+</div>
+
+<p>The thesis opens with one sentence. Asked to complete <em>"Python
+programming language was created by"</em>, GPT-2 answers <strong>"the
+late Paul Graham."</strong> The answer is Guido van Rossum. Nothing in
+the wording says it is wrong.</p>
+<p>This folder holds that prompt and 14 others from the same run, with
+the correct answer and GPT-2's raw continuation.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Prompt</th>
+<th>Correct answer</th>
+<th>GPT-2 continuation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sylhet is famous for its</td>
+<td>tea gardens</td>
+<td>ability to make you feel like you're in a</td>
+</tr>
+<tr class="even">
+<td>The Amazon is known for its</td>
+<td>biodiversity</td>
+<td>high-end products, but it's also known</td>
+</tr>
+<tr class="odd">
+<td>Silicon Valley is associated with</td>
+<td>technology companies</td>
+<td>the "Silicon Valley" movement, which is</td>
+</tr>
+<tr class="even">
+<td>Albert Einstein was born in</td>
+<td>Ulm Germany</td>
+<td>1859 in the city of Berlin. He was</td>
+</tr>
+<tr class="odd">
+<td>The Wright Brothers first flew in</td>
+<td>Kitty Hawk</td>
+<td>the early 1900s, and the company's first</td>
+</tr>
+<tr class="even">
+<td>Penicillin was discovered by</td>
+<td>Alexander Fleming</td>
+<td>the FDA in the 1970s. The</td>
+</tr>
+<tr class="odd">
+<td>The theory of relativity was developed by</td>
+<td>Einstein</td>
+<td>Einstein in the 1930s. It is a theory</td>
+</tr>
+<tr class="even">
+<td>Insulin is used to treat</td>
+<td>diabetes</td>
+<td>diabetes, but it is also used to treat other</td>
+</tr>
+<tr class="odd">
+<td>Aspirin was originally derived from</td>
+<td>willow bark</td>
+<td>the Greek word for "blood" and was used</td>
+</tr>
+<tr class="even">
+<td>The Eiffel Tower is located in</td>
+<td>Paris</td>
+<td>the heart of the city, and is the only</td>
+</tr>
+<tr class="odd">
+<td>Shakespeare was born in</td>
+<td>Stratford-upon-Avon</td>
+<td>1829 in the village of Bury St.</td>
+</tr>
+<tr class="even">
+<td>Python programming language was created by</td>
+<td>Guido van Rossum</td>
+<td>the late Paul Graham. Graham was a prolific programmer</td>
+</tr>
+<tr class="odd">
+<td>The World Wide Web was invented by</td>
+<td>Tim Berners-Lee</td>
+<td>the late, great, and great-grandfather</td>
+</tr>
+<tr class="even">
+<td>The bank by the river was</td>
+<td>eroding</td>
+<td>a major source of revenue for the city, and</td>
+</tr>
+<tr class="odd">
+<td>The bat flew out of the</td>
+<td>cave</td>
+<td>sky and flew into the air. "</td>
+</tr>
+</tbody>
+</table>
+<p>File: <a
+href="https://github.com/RejaulKorimSadi/MRI-of-a-Mad-Machine/blob/HEAD/evidence/introduction_example/gpt2_association_prompts_outputs.csv"><code>gpt2_association_prompts_outputs.csv</code></a>.
+The <code>Expected Wrong</code> column records the wrong association
+each prompt was written to tempt.</p>
+<div align="center">
+
+<p><sub><a href="study-a.html">Study A · The Attention
+Ablation Test</a> · <a href="study-b.html">Study B ·
+Commitment repair</a> ·
+<a href="study-c.html">Study C · Confidence and
+identity</a> · <a href="verification.html">Verification</a> ·
+<a href="https://github.com/RejaulKorimSadi/MRI-of-a-Mad-Machine/blob/HEAD/thesis/MRI_of_a_Mad_Machine_Thesis.pdf">Thesis
+PDF</a></sub></p>
+</div>
+
+<p style="text-align:center;color:#8B98A7;font-size:13px">Source, data and code: <a href="https://github.com/RejaulKorimSadi/MRI-of-a-Mad-Machine">github.com/RejaulKorimSadi/MRI-of-a-Mad-Machine</a></p></main>
+<script type="text/plain" id="stl"></script>
+<script>
+(function(){const cv=document.getElementById('cv');if(!cv)return;const cx=cv.getContext('2d');
+const V=[...document.getElementById('stl').textContent.matchAll(/vertex\s+(\S+)\s+(\S+)\s+(\S+)/g)].map(m=>[+m[1],+m[2],+m[3]]);const T=[];for(let i=0;i<V.length;i+=3)T.push([V[i],V[i+1],V[i+2]]);
+const towers=false;
+function col(t){const z=(t[0][2]+t[1][2]+t[2][2])/3,x=(t[0][0]+t[1][0]+t[2][0])/3;
+ if(!towers){if(z<=10)return[255,93,79];if(z<36)return[111,227,211];if(z<=48.5)return[242,180,96];return[255,93,79];}
+ if(z<0)return[76,88,103];const l=Math.floor(z/11);if(!(l===1||l===3||l===4))return[88,100,116];return x<0?[255,93,79]:[111,227,211];}
+let ry=.6,rx=.5,sc=3.4,drag=null;
+cv.addEventListener('pointerdown',e=>{drag=[e.clientX,e.clientY,ry,rx];cv.setPointerCapture(e.pointerId)});
+cv.addEventListener('pointermove',e=>{if(drag){ry=drag[2]+(e.clientX-drag[0])*.01;rx=Math.max(-.2,Math.min(1.3,drag[3]+(e.clientY-drag[1])*.01))}});
+cv.addEventListener('pointerup',()=>drag=null);cv.addEventListener('wheel',e=>{e.preventDefault();sc=Math.max(1.5,Math.min(7,sc*(e.deltaY<0?1.1:.9)))},{passive:false});
+function f(){if(!drag)ry+=.005;cx.clearRect(0,0,cv.width,cv.height);const a=Math.cos(ry),b=Math.sin(ry),c=Math.cos(rx),d=Math.sin(rx);
+const P=p=>{let x=p[0],y=p[1],z=p[2]-22;let x1=x*a-y*b,y1=x*b+y*a;return[x1,y1*c-z*d,y1*d+z*c]};const L=[.35,-.55,.75];
+const F=T.map(t=>{const q=t.map(P);const u=[q[1][0]-q[0][0],q[1][1]-q[0][1],q[1][2]-q[0][2]],v=[q[2][0]-q[0][0],q[2][1]-q[0][1],q[2][2]-q[0][2]];let n=[u[1]*v[2]-u[2]*v[1],u[2]*v[0]-u[0]*v[2],u[0]*v[1]-u[1]*v[0]];const l=Math.hypot(...n)||1;n=n.map(k=>k/l);return{q,d:(q[0][1]+q[1][1]+q[2][1])/3,n,c:col(t)}});
+F.sort((p,q)=>q.d-p.d);const ox=cv.width/2,oy=cv.height/2+10;
+for(const g of F){const lt=.32+.68*Math.abs(g.n[0]*L[0]+g.n[1]*L[1]+g.n[2]*L[2]);const s=`rgb(${g.c.map(k=>Math.round(k*lt)).join(',')})`;cx.fillStyle=s;cx.strokeStyle=s;cx.beginPath();cx.moveTo(ox+g.q[0][0]*sc,oy-g.q[0][2]*sc);cx.lineTo(ox+g.q[1][0]*sc,oy-g.q[1][2]*sc);cx.lineTo(ox+g.q[2][0]*sc,oy-g.q[2][2]*sc);cx.closePath();cx.fill();cx.stroke();}
+requestAnimationFrame(f)}f();})();
+</script></body></html>

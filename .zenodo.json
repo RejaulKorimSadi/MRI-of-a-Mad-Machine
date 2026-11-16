@@ -1,6 +1,6 @@
 {
   "title": "MRI of a Mad Machine: The Structural Origins of Hallucination",
-  "description": "B.Sc. thesis: three controlled studies on which part of a language model turns a defect into a confident error, with all data, code and a script that recomputes every number.",
+  "description": "B.Sc. thesis: three controlled studies (including the Attention Ablation Test) on which part of a language model turns a defect into a confident error, with all data, code and a script that recomputes every number.",
   "upload_type": "dataset",
   "access_right": "open",
   "license": "cc-by-4.0",

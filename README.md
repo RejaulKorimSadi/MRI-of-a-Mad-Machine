@@ -11,12 +11,14 @@
 <a href="thesis/MRI_of_a_Mad_Machine_Thesis.pdf"><img alt="Thesis PDF" src="https://img.shields.io/badge/READ_THE_THESIS-PDF_·_37_pages-FF5D4F?style=for-the-badge&labelColor=0E131A"></a>
 <a href="#08-every-number-is-checked"><img alt="Verified" src="https://img.shields.io/badge/NUMBERS_RE--VERIFIED-132_%2F_132-6FE3D3?style=for-the-badge&labelColor=0E131A"></a>
 <a href="https://doi.org/10.17605/OSF.IO/CS967"><img alt="OSF" src="https://img.shields.io/badge/STUDY_C-PRE--REGISTERED_·_OSF-F2B460?style=for-the-badge&labelColor=0E131A"></a>
-<a href="#09-inside-this-package"><img alt="Open data" src="https://img.shields.io/badge/DATA_+_CODE-OPEN-7AA7FF?style=for-the-badge&labelColor=0E131A"></a>
+<a href="#09-inside-this-repository"><img alt="Open data" src="https://img.shields.io/badge/DATA_+_CODE-OPEN-7AA7FF?style=for-the-badge&labelColor=0E131A"></a>
 <a href="https://rejaulkorimsadi.github.io/MRI-of-a-Mad-Machine/"><img alt="Website" src="https://img.shields.io/badge/WEBSITE-3D_VIEW-ECF0F3?style=for-the-badge&labelColor=0E131A"></a>
 
 <sub><b>B.Sc. thesis</b> · Department of Computer Science and Engineering · Metropolitan University, Sylhet · November 2026</sub>
 
 <sub><a href="#01-the-claim">The claim</a> · <a href="#02-the-scan-result">Scan result</a> · <a href="#04-study-a--attention">Study A</a> · <a href="#05-study-b--commitment">Study B</a> · <a href="#06-study-c--the-surface">Study C</a> · <a href="#07-how-a-confident-error-is-assembled">Synthesis</a> · <a href="#08-every-number-is-checked">Verification</a> · <a href="#3d-model">3D model</a> · <a href="#10-reproduce-it">Reproduce</a></sub>
+
+<sub><b>Full study pages:</b> <a href="evidence/study_A_attention_ablation/">Study A · The Attention Ablation Test</a> · <a href="evidence/study_B_commitment_repair/">Study B · Commitment repair</a> · <a href="evidence/study_C_confidence_and_identity/">Study C · Confidence and identity</a> · <a href="verification/">Verification</a></sub>
 
 </div>
 
@@ -120,6 +122,10 @@ Group test on the 31-line texts: attention mean 91.1% vs state space 52.9% (Mann
 
 **Reading.** Removing attention leaves recall from memory unchanged. It changes whether a passage can override what the model knows, **even when the model knew better.** Attention is the machinery of context grounding, and that machinery cuts both ways: it is what makes retrieval work when the text is true, and a direct route to confident error when it is false.
 
+> [!TIP]
+> **Full study page: [The Attention Ablation Test →](evidence/study_A_attention_ablation/)**
+> Design figure, publication figure, both architectures in 3D, the 24-fact pilot record, a notebook and a guide to every file. This study used to live in its own repository; it is now part of this one.
+
 <br>
 
 <a id="05-study-b--commitment"></a>
@@ -147,6 +153,9 @@ Group test on the 31-line texts: attention mean 91.1% vs state space 52.9% (Mann
 | Model answers correctly when asked on its own | **2 of 111** |
 
 **Reading.** The later errors are **elaborations of the model's own committed claim.** Replace that claim with anything at all and about half of them disappear. The model was not hiding the truth: on these long-tail questions it never knew the answer. Repairing an answer at the point of divergence works even without supplying the truth.
+
+> [!TIP]
+> **Full study page: [Study B · Repairing the first wrong fact →](evidence/study_B_commitment_repair/)** Conditions, scoring columns, both annotators and the commands that reproduce every number.
 
 <br>
 
@@ -176,6 +185,9 @@ Group test on the 31-line texts: attention mean 91.1% vs state space 52.9% (Mann
 | Same 50 questions, the user claims an identity | mean answer length 188 words (anonymous) vs 259–268 (patient, physician, researcher) |
 
 **Reading.** When information is missing, models usually guess, and the wording barely changes. Hedging is not a usable warning sign. Evaluations should score clarification as a good outcome rather than read confidence from tone.
+
+> [!TIP]
+> **Full study page: [Study C · Confidence and identity →](evidence/study_C_confidence_and_identity/)** The registration, scoring rubric, prompt taxonomy, raw outputs and both raters' sheets.
 
 <br>
 
@@ -2151,24 +2163,37 @@ endsolid mri_of_a_mad_machine
 
 <br>
 
-<a id="09-inside-this-package"></a>
+<a id="09-inside-this-repository"></a>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/d09-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/d09-light.svg">
-  <img src="assets/d09-dark.svg" width="100%" alt="09 Inside this package">
+  <img src="assets/d09-dark.svg" width="100%" alt="09 Inside this repository">
 </picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/atlas-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/atlas-light.svg">
+  <img src="assets/atlas-dark.svg" width="100%" alt="Repository atlas: thesis, three studies, introduction example, verification, website and 3D models">
+</picture>
+
+<details>
+<summary><b>Full file tree</b></summary>
 
 ```text
 MRI-of-a-Mad-Machine/
 ├── README.md                          this page (light and dark artwork)
-├── docs/                              the same page as a website (GitHub Pages)
+├── docs/                              this page and the three study pages as a website
 ├── thesis/
 │   ├── MRI_of_a_Mad_Machine_Thesis.pdf        the thesis, 37 pages
 │   └── source/                        LaTeX, figure scripts, figures, ledger generator
 ├── evidence/
-│   ├── study_A_attention_ablation/    free recall (outputs, blind sheet, two annotators)
-│   │                                  + 14-model context probe (999 items x 14, scored)
-│   │                                  + 24-fact pilot kept for the record
+│   ├── study_A_attention_ablation/    THE ATTENTION ABLATION TEST (own page, own 3D model)
+│   │   ├── code/, data/               free recall: outputs, blind sheet, two annotators
+│   │   ├── study1b/                   14-model context probe (999 items x 14, scored)
+│   │   ├── study1b_pilot/             24-fact pilot kept for the record
+│   │   ├── figures/                   publication figures (PNG + PDF)
+│   │   ├── notebooks/                 notebook mirror of the free-recall setup
+│   │   └── assets/                    artwork, turntable and STL for the study page
 │   ├── study_B_commitment_repair/     111 items, 4 conditions, baselines, both annotators
 │   ├── study_C_confidence_and_identity/  prompts, probes, raw outputs, scoring sheets, code
 │   └── introduction_example/          the GPT-2 "Paul Graham" output
@@ -2183,6 +2208,8 @@ MRI-of-a-Mad-Machine/
     ├── mri_machine_3d.stl             3D model (GitHub opens it in a 3D viewer)
     └── source/                        Python that generates every SVG and the STL
 ```
+
+</details>
 
 <details>
 <summary><b>Thesis chapters</b></summary>
@@ -2221,6 +2248,12 @@ Rebuild the PDF (needs a LaTeX installation with `pdflatex`):
 cd thesis\source; py make_ledger_tex.py; pdflatex main.tex; pdflatex main.tex; pdflatex main.tex
 ```
 
+Recompute Study A on its own (no GPU needed):
+
+```powershell
+cd evidence\study_A_attention_ablation; py code\analyze_study1a.py; cd study1b; py code\analyze_probe.py; py code\controls_known_facts.py; cd ..\..\..
+```
+
 Re-run the architecture study itself: see [`evidence/study_A_attention_ablation/study1b/README.md`](evidence/study_A_attention_ablation/study1b/README.md). All 14 models fit on one 8 GB GPU (about 3–4 hours in total).
 
 <br>
@@ -2241,6 +2274,6 @@ Re-run the architecture study itself: see [`evidence/study_A_attention_ablation/
 **Research behind the thesis**
 - **R1.** Sadi, Tasin and Naeem. *From Architecture to Output: Testing the Structural Origins of Hallucination and the Amplifying Role of Data.* Under review, NEJLT. [arXiv:2606.07537](https://arxiv.org/abs/2606.07537). Studies A and B.
 - **R2.** Sadi, Tasin, Naeem, Chowdhury and Chowdhury. *Wrong with Confidence: Measuring Hallucination, Overconfidence and Identity-Conditioned Behaviour in Large Language Models.* Under review, PeerJ Computer Science. OSF registration [10.17605/OSF.IO/CS967](https://doi.org/10.17605/OSF.IO/CS967). Study C.
-- **Architecture study repository:** [The Attention Ablation Test](https://github.com/RejaulKorimSadi/The-Attention-Ablation-Test).
+- **The Attention Ablation Test** used to be a separate repository. It is now [Study A in this repository](evidence/study_A_attention_ablation/), and the old address points here.
 
 <sub>Code: MIT ([`LICENSE`](LICENSE)). Data and figures: CC BY 4.0 ([`LICENSE-DATA.md`](LICENSE-DATA.md)). Thesis text: © 2026 the authors. SimpleQA questions are from OpenAI's SimpleQA benchmark (MIT). Pythia, Mamba, Qwen and SmolLM are released by their authors under their own licences.</sub>

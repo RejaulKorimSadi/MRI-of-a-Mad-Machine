@@ -4,11 +4,12 @@ title: "MRI of a Mad Machine: The Structural Origins of Hallucination"
 abstract: >-
   Which part of a language model turns a defect into a confident error? Three controlled
   studies on 21 language models, with blind double scoring, hypotheses fixed before scoring
-  and open data. Context mixing decides whether a false input becomes an error (attention vs
-  state space at matched data and scale: 650 vs 566 of 666, p = 2.5e-20). Decoding commitment
-  decides how far an error spreads (repairing the first wrong fact: 92.5% to 48.1%, p = 5.5e-12).
-  The output surface hides the guess (75.3% of wrong answers unhedged; AUROC 0.56). One script
-  recomputes 132 reported numbers from the raw files; all match.
+  and open data. Study A, the Attention Ablation Test, shows that context mixing decides
+  whether a false input becomes an error (attention vs state space at matched data and scale:
+  650 vs 566 of 666, p = 2.5e-20). Study B shows that decoding commitment decides how far an
+  error spreads (repairing the first wrong fact: 92.5% to 48.1%, p = 5.5e-12). Study C shows
+  that the output surface hides the guess (75.3% of wrong answers unhedged; AUROC 0.56). One
+  script recomputes 132 reported numbers from the raw files; all match.
 type: dataset
 authors:
   - family-names: Sadi
@@ -23,8 +24,8 @@ authors:
 repository-code: "https://github.com/RejaulKorimSadi/MRI-of-a-Mad-Machine"
 url: "https://rejaulkorimsadi.github.io/MRI-of-a-Mad-Machine/"
 license: MIT
-keywords: [hallucination, large language models, self-attention, state-space models, autoregressive decoding, verbal uncertainty, reproducibility]
-version: "1.0.0"
+keywords: [hallucination, large language models, self-attention, state-space models, Mamba, Pythia, ablation, autoregressive decoding, verbal uncertainty, reproducibility]
+version: "1.1.0"
 date-released: "2026-11-17"
 preferred-citation:
   type: thesis
@@ -40,3 +41,15 @@ preferred-citation:
   institution:
     name: "Department of Computer Science and Engineering, Metropolitan University, Sylhet"
   year: 2026
+references:
+  - type: article
+    title: "From Architecture to Output: Testing the Structural Origins of Hallucination and the Amplifying Role of Data"
+    authors:
+      - family-names: Sadi
+        given-names: Md. Rejaul Korim
+      - family-names: Tasin
+        given-names: Toufiqur Rahman
+      - family-names: Naeem
+        given-names: Golam Mostofa
+    year: 2026
+    url: "https://arxiv.org/abs/2606.07537"

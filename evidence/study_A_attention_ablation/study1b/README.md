@@ -27,7 +27,7 @@ Models: `EleutherAI/pythia-{160m,410m,1b,1.4b,2.8b}`, `state-spaces/mamba-{130m,
 Reproduce the reported numbers from the released outputs:
 
 ```
-cd study1_architecture/study1b
+cd study1b
 python code/analyze_probe.py
 python code/tables_by_model.py
 python code/controls_known_facts.py
@@ -36,7 +36,7 @@ python code/controls_known_facts.py
 Regenerate outputs (an 8 GB GPU is sufficient; roughly 3-4 hours for all 14 models). Run from `study1b/`; `run_probe.py` resumes from existing files, so move the released `outputs/` aside first:
 
 ```
-cd study1_architecture/study1b
+cd study1b
 python code/build_probe.py
 python code/run_probe.py --model EleutherAI/pythia-2.8b
 python code/analyze_probe.py

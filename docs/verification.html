@@ -1,0 +1,100 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Verification · MRI of a Mad Machine</title><meta name="description" content="Verification · MRI of a Mad Machine">
+<meta property="og:title" content="Verification · MRI of a Mad Machine"><meta property="og:image" content="assets/hero-dark.svg">
+<style>
+nav{position:sticky;top:0;z-index:5;background:rgba(6,8,12,.92);backdrop-filter:blur(6px);border-bottom:1px solid #1C2531;text-align:center;padding:10px 8px;font:12px/1.6 JetBrains Mono,Consolas,monospace;letter-spacing:1px}
+nav a{color:#8B98A7;text-decoration:none;margin:0 10px}nav a.on{color:#6FE3D3}nav a:hover{color:#ECF0F3}
+:root{color-scheme:dark}body{margin:0;background:#06080C;color:#D9E0E7;font:16px/1.65 Inter,Segoe UI,system-ui,sans-serif}
+main{max-width:1240px;margin:0 auto;padding:28px 20px 80px}img{max-width:100%;height:auto}a{color:#6FE3D3}
+h3{font-family:Georgia,serif;font-size:28px;color:#ECF0F3}table{border-collapse:collapse;width:100%;margin:14px 0;font-size:15px}
+th,td{border:1px solid #1C2531;padding:8px 12px;text-align:left}th{background:#0E131A;color:#ECF0F3}tr:nth-child(even) td{background:#0B1016}
+pre{background:#0E131A;border:1px solid #1C2531;border-radius:10px;padding:14px;overflow:auto}code{font-family:JetBrains Mono,Consolas,monospace;font-size:13.5px;color:#F2B460}
+blockquote{border-left:3px solid #FF5D4F;background:#0E131A;margin:16px 0;padding:10px 18px;border-radius:0 10px 10px 0}.imp{color:#FF5D4F;letter-spacing:2px;font-size:12px}
+details{background:#0E131A;border:1px solid #1C2531;border-radius:10px;padding:10px 16px;margin:14px 0}summary{cursor:pointer;color:#ECF0F3}
+#viewer{background:radial-gradient(circle at 50% 45%,#0f2a2a,#06080C 70%);border:1px solid #1C2531;border-radius:16px;padding:10px;text-align:center}
+#cv{width:100%;max-width:900px;cursor:grab;touch-action:none}.cap{color:#8B98A7;font:12px Consolas,monospace;letter-spacing:1px;padding:6px}
+</style></head><body><nav><a href="index.html">THESIS</a><a href="study-a.html">STUDY A</a><a href="study-b.html">STUDY B</a><a href="study-c.html">STUDY C</a><a href="intro.html">INTRO EXAMPLE</a><a href="verification.html" class="on">VERIFICATION</a><a href="https://github.com/RejaulKorimSadi/MRI-of-a-Mad-Machine">GITHUB ↗</a></nav><main><div align="center">
+
+<p><sub><a href="index.html">MRI of a Mad Machine</a> ›
+<b>verification</b></sub></p>
+<picture>
+  
+  
+  <img src="assets/d08-dark.svg" width="100%" alt="Every number is checked">
+</picture>
+
+<picture>
+  
+  
+  <img src="assets/verify-dark.svg" width="100%" alt="Verification: 132 of 132 numbers match">
+</picture>
+
+</div>
+
+<p><a
+href="https://github.com/RejaulKorimSadi/MRI-of-a-Mad-Machine/blob/HEAD/verification/verify_thesis_numbers.py"><code>verify_thesis_numbers.py</code></a>
+reads the released raw files in <code>evidence/</code> directly,
+recomputes each reported figure with its own code, and compares it with
+the value printed in the thesis.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode powershell"><code class="sourceCode powershell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>py <span class="op">-</span>m pip install pandas numpy scipy statsmodels<span class="op">;</span> py verification\verify_thesis_numbers<span class="op">.</span><span class="fu">py</span></span></code></pre></div>
+<p>Run it from the top of the repository. The last line should read
+<code>132 checks, 132 passed, 0 failed</code>.</p>
+<table>
+<thead>
+<tr class="header">
+<th>File</th>
+<th>What it holds</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>verify_thesis_numbers.py</code></td>
+<td>The checking script</td>
+</tr>
+<tr class="even">
+<td><code>verification_report.txt</code></td>
+<td>Its full output: every number, the value recomputed, pass or
+fail</td>
+</tr>
+<tr class="odd">
+<td><code>ledger.json</code></td>
+<td>Every reported number, where it appears in the thesis and which raw
+file it comes from</td>
+</tr>
+<tr class="even">
+<td><code>figure_data.json</code></td>
+<td>The exact values the thesis figures are drawn from</td>
+</tr>
+</tbody>
+</table>
+<p>Studies A and B are recomputed in full. For Study C the script
+recomputes what the released scoring sheets support (39.9% → 66.7%, and
+77.4% unhedged), which the thesis reports as a robustness check beside
+the final registered analysis. Appendix A of the thesis prints the same
+table.</p>
+<div align="center">
+
+<p><sub><a href="index.html">Back to the thesis</a></sub></p>
+</div>
+
+<p style="text-align:center;color:#8B98A7;font-size:13px">Source, data and code: <a href="https://github.com/RejaulKorimSadi/MRI-of-a-Mad-Machine">github.com/RejaulKorimSadi/MRI-of-a-Mad-Machine</a></p></main>
+<script type="text/plain" id="stl"></script>
+<script>
+(function(){const cv=document.getElementById('cv');if(!cv)return;const cx=cv.getContext('2d');
+const V=[...document.getElementById('stl').textContent.matchAll(/vertex\s+(\S+)\s+(\S+)\s+(\S+)/g)].map(m=>[+m[1],+m[2],+m[3]]);const T=[];for(let i=0;i<V.length;i+=3)T.push([V[i],V[i+1],V[i+2]]);
+const towers=false;
+function col(t){const z=(t[0][2]+t[1][2]+t[2][2])/3,x=(t[0][0]+t[1][0]+t[2][0])/3;
+ if(!towers){if(z<=10)return[255,93,79];if(z<36)return[111,227,211];if(z<=48.5)return[242,180,96];return[255,93,79];}
+ if(z<0)return[76,88,103];const l=Math.floor(z/11);if(!(l===1||l===3||l===4))return[88,100,116];return x<0?[255,93,79]:[111,227,211];}
+let ry=.6,rx=.5,sc=3.4,drag=null;
+cv.addEventListener('pointerdown',e=>{drag=[e.clientX,e.clientY,ry,rx];cv.setPointerCapture(e.pointerId)});
+cv.addEventListener('pointermove',e=>{if(drag){ry=drag[2]+(e.clientX-drag[0])*.01;rx=Math.max(-.2,Math.min(1.3,drag[3]+(e.clientY-drag[1])*.01))}});
+cv.addEventListener('pointerup',()=>drag=null);cv.addEventListener('wheel',e=>{e.preventDefault();sc=Math.max(1.5,Math.min(7,sc*(e.deltaY<0?1.1:.9)))},{passive:false});
+function f(){if(!drag)ry+=.005;cx.clearRect(0,0,cv.width,cv.height);const a=Math.cos(ry),b=Math.sin(ry),c=Math.cos(rx),d=Math.sin(rx);
+const P=p=>{let x=p[0],y=p[1],z=p[2]-22;let x1=x*a-y*b,y1=x*b+y*a;return[x1,y1*c-z*d,y1*d+z*c]};const L=[.35,-.55,.75];
+const F=T.map(t=>{const q=t.map(P);const u=[q[1][0]-q[0][0],q[1][1]-q[0][1],q[1][2]-q[0][2]],v=[q[2][0]-q[0][0],q[2][1]-q[0][1],q[2][2]-q[0][2]];let n=[u[1]*v[2]-u[2]*v[1],u[2]*v[0]-u[0]*v[2],u[0]*v[1]-u[1]*v[0]];const l=Math.hypot(...n)||1;n=n.map(k=>k/l);return{q,d:(q[0][1]+q[1][1]+q[2][1])/3,n,c:col(t)}});
+F.sort((p,q)=>q.d-p.d);const ox=cv.width/2,oy=cv.height/2+10;
+for(const g of F){const lt=.32+.68*Math.abs(g.n[0]*L[0]+g.n[1]*L[1]+g.n[2]*L[2]);const s=`rgb(${g.c.map(k=>Math.round(k*lt)).join(',')})`;cx.fillStyle=s;cx.strokeStyle=s;cx.beginPath();cx.moveTo(ox+g.q[0][0]*sc,oy-g.q[0][2]*sc);cx.lineTo(ox+g.q[1][0]*sc,oy-g.q[1][2]*sc);cx.lineTo(ox+g.q[2][0]*sc,oy-g.q[2][2]*sc);cx.closePath();cx.fill();cx.stroke();}
+requestAnimationFrame(f)}f();})();
+</script></body></html>
