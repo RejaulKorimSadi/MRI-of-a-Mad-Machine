@@ -1,0 +1,20 @@
+Query,Correct Answer,Expected Wrong,Model Output
+Sylhet is famous for its,tea gardens,capital city,ability to make you feel like you're in a
+The Amazon is known for its,biodiversity,river length only,"high-end products, but it's also known"
+Silicon Valley is associated with,technology companies,geographic valley,"the ""Silicon Valley"" movement, which is"
+Albert Einstein was born in,Ulm Germany,Princeton,1859 in the city of Berlin. He was
+The Wright Brothers first flew in,Kitty Hawk,Chicago,"the early 1900s, and the company's first"
+Penicillin was discovered by,Alexander Fleming,Louis Pasteur,"the FDA in the 1970s.
+
+The"
+The theory of relativity was developed by,Einstein,Newton,Einstein in the 1930s. It is a theory
+Insulin is used to treat,diabetes,high blood pressure,"diabetes, but it is also used to treat other"
+Aspirin was originally derived from,willow bark,coal tar,"the Greek word for ""blood"" and was used"
+The Eiffel Tower is located in,Paris,London,"the heart of the city, and is the only"
+Shakespeare was born in,Stratford-upon-Avon,London,1829 in the village of Bury St.
+Python programming language was created by,Guido van Rossum,Dennis Ritchie,the late Paul Graham. Graham was a prolific programmer
+The World Wide Web was invented by,Tim Berners-Lee,Bill Gates,"the late, great, and great-grandfather"
+The bank by the river was,eroding,closed for business,"a major source of revenue for the city, and"
+The bat flew out of the,cave,sports equipment bag,"sky and flew into the air.
+
+"""

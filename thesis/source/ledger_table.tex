@@ -1,0 +1,146 @@
+{\small
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}cp{8.2cm}rrc@{}}
+\toprule
+Study & Figure checked & Thesis & Recomputed & Result\\
+\midrule
+\endfirsthead
+\toprule
+Study & Figure checked & Thesis & Recomputed & Result\\
+\midrule
+\endhead
+A & Free recall: responses double-scored & 400 & 400 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Free recall: raw agreement (of 400) & 395 & 395 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Free recall: Cohen's kappa & 0.85 & 0.85 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Free recall: Pythia-2.8B correct of 200 & 3 & 3 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Free recall: Mamba-2.8B correct of 200 & 3 & 3 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Free recall: paired McNemar p on correctness & 1 & 1 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Free recall: factual error on the same questions & 182 & 182 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Context probe: models run & 14 & 14 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Context probe: items per model & 999 & 999 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Conflict items followed, pythia-160m & 312 & 312 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Conflict items followed, mamba-130m-hf & 271 & 271 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Conflict items followed, pythia-410m & 646 & 646 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Conflict items followed, mamba-370m-hf & 427 & 427 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Conflict items followed, pythia-1b & 653 & 653 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Conflict items followed, mamba-790m-hf & 542 & 542 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Conflict items followed, pythia-1.4b & 648 & 648 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Conflict items followed, mamba-1.4b-hf & 186 & 186 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & 1.4B discordant (attention only) & 462 & 462 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & 1.4B discordant (state-space only) & 0 & 0 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Conflict items followed, pythia-2.8b & 650 & 650 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Conflict items followed, mamba-2.8b-hf & 566 & 566 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & 2.8B discordant (attention only) & 90 & 90 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & 2.8B discordant (state-space only) & 6 & 6 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & 2.8B McNemar p (x1e-20) & 2.5 & 2.5 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & 2.8B known facts, items & 279 & 279 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & 2.8B known facts, Pythia followed & 264 & 264 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & 2.8B known facts, Mamba followed & 210 & 210 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & 2.8B known facts McNemar p (x1e-13) & 9 & 9 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & 2.8B support (true line) Mamba correct, long & 110 & 110 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-160m/mamba-130m-hf: discordant, attention only & 152 & 152 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-160m/mamba-130m-hf: discordant, state space only & 111 & 111 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-160m/mamba-130m-hf: McNemar p (mantissa) & 1.35 & 1.35 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-160m/mamba-130m-hf: known-fact items (long) & 15 & 15 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-160m/mamba-130m-hf: known facts, attention followed & 8 & 8 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-160m/mamba-130m-hf: known facts, state space followed & 14 & 14 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-160m/mamba-130m-hf: known facts p (mantissa) & 3.1 & 3.1 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-410m/mamba-370m-hf: discordant, attention only & 228 & 228 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-410m/mamba-370m-hf: discordant, state space only & 9 & 9 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-410m/mamba-370m-hf: McNemar p (mantissa) & 5.25 & 5.25 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-410m/mamba-370m-hf: known-fact items (long) & 87 & 87 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-410m/mamba-370m-hf: known facts, attention followed & 80 & 80 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-410m/mamba-370m-hf: known facts, state space followed & 28 & 28 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-410m/mamba-370m-hf: known facts p (mantissa) & 2.3 & 2.3 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-1b/mamba-790m-hf: discordant, attention only & 113 & 113 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-1b/mamba-790m-hf: discordant, state space only & 2 & 2 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-1b/mamba-790m-hf: McNemar p (mantissa) & 3.21 & 3.21 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-1b/mamba-790m-hf: known-fact items (long) & 78 & 78 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-1b/mamba-790m-hf: known facts, attention followed & 73 & 73 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-1b/mamba-790m-hf: known facts, state space followed & 40 & 40 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-1b/mamba-790m-hf: known facts p (mantissa) & 2.3 & 2.3 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-1.4b/mamba-1.4b-hf: discordant, attention only & 462 & 462 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-1.4b/mamba-1.4b-hf: discordant, state space only & 0 & 0 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-1.4b/mamba-1.4b-hf: McNemar p (mantissa) & 1.68 & 1.68 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-1.4b/mamba-1.4b-hf: known-fact items (long) & 243 & 243 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-1.4b/mamba-1.4b-hf: known facts, attention followed & 235 & 235 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-1.4b/mamba-1.4b-hf: known facts, state space followed & 63 & 63 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-1.4b/mamba-1.4b-hf: known facts p (mantissa) & 3.3 & 3.3 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-2.8b/mamba-2.8b-hf: discordant, attention only & 90 & 90 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-2.8b/mamba-2.8b-hf: discordant, state space only & 6 & 6 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-2.8b/mamba-2.8b-hf: McNemar p (mantissa) & 2.5 & 2.5 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-2.8b/mamba-2.8b-hf: known-fact items (long) & 279 & 279 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-2.8b/mamba-2.8b-hf: known facts, attention followed & 264 & 264 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-2.8b/mamba-2.8b-hf: known facts, state space followed & 210 & 210 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & pythia-2.8b/mamba-2.8b-hf: known facts p (mantissa) & 9 & 9 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & 2.8B short texts: attention followed (of 333) & 332 & 332 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & 2.8B short texts: state space followed (of 333) & 312 & 312 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & 2.8B long texts: attention followed (of 333) & 318 & 318 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & 2.8B long texts: state space followed (of 333) & 254 & 254 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Pythia-2.8B knew fact without context (\%) & 85.6 & 85.6 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Mamba-2.8B knew fact without context (\%) & 92.8 & 92.8 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Free recall pythia-2.8b: factual errors & 187 & 187 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Free recall pythia-2.8b: abstentions & 7 & 7 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Free recall pythia-2.8b: degenerate & 3 & 3 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Free recall mamba-2.8b-hf: factual errors & 195 & 195 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Free recall mamba-2.8b-hf: abstentions & 0 & 0 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Free recall mamba-2.8b-hf: degenerate & 2 & 2 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Free recall: McNemar p on factual error & 0.096 & 0.096 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Free recall: factual error only Pythia & 5 & 5 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Free recall: factual error only Mamba & 13 & 13 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Other attention models: lowest long follow rate (\%) & 98.8 & 98.8 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Mamba long follow rate at 1.4B (\%) & 29.4 & 29.4 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Mamba long follow rate at 2.8B (\%) & 76.3 & 76.3 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Attention model follows more, pythia-410m (1 = yes) & 1 & 1 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Attention model follows more, pythia-1b (1 = yes) & 1 & 1 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Attention model follows more, pythia-1.4b (1 = yes) & 1 & 1 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Attention model follows more, pythia-2.8b (1 = yes) & 1 & 1 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Group mean long follow rate, attention (\%) & 91.1 & 91.1 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Group mean long follow rate, state-space (\%) & 52.9 & 52.9 & \textcolor{okgreen}{\textbf{PASS}} \\
+A & Group Mann-Whitney p & 0.007 & 0.007 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & Rows double-scored for downstream error & 333 & 333 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & Kappa, downstream error (dichotomised) & 0.94 & 0.94 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & Kappa, isolated correctness & 1 & 1 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & allam-2-7b: items & 69 & 69 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & allam-2-7b: later error before (\%) & 94.2 & 94.2 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & allam-2-7b: later error after (\%) & 50.7 & 50.7 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & openai/gpt-oss-120b: items & 18 & 18 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & openai/gpt-oss-120b: later error before (\%) & 77.8 & 77.8 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & openai/gpt-oss-120b: later error after (\%) & 44.4 & 44.4 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & qwen/qwen3.6-27b: items & 19 & 19 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & qwen/qwen3.6-27b: later error before (\%) & 100 & 100 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & qwen/qwen3.6-27b: later error after (\%) & 42.1 & 42.1 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & Fully repaired items & 50 & 50 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & Fully repaired items known in isolation & 1 & 1 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & Refusals after correct fact & 5 & 5 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & Refusals after wrong fact & 12 & 12 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & Failing claims per answer before & 1.7 & 1.7 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & Failing claims per answer after & 0.75 & 0.75 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & Baseline answers that corrected themselves & 0 & 0 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & Items analysed & 111 & 111 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & Paired items for repair test & 106 & 106 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & Downstream error before repair (\%) & 92.5 & 92.5 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & Downstream error after repair (\%) & 48.1 & 48.1 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & Items fixed by repair & 50 & 50 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & Items broken by repair & 3 & 3 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & Repair McNemar p (x1e-12) & 5.5 & 5.5 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & Correct in isolation (of 111) & 2 & 2 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & Control comparison, items & 97 & 97 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & Error-free after correct fact (\%) & 54.6 & 54.6 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & Error-free after wrong fact (\%) & 60.8 & 60.8 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & Correct vs wrong fact McNemar p & 0.38 & 0.38 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & Second annotator: before (\%) & 97.2 & 97.2 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & Second annotator: after (\%) & 50 & 50 & \textcolor{okgreen}{\textbf{PASS}} \\
+B & Second annotator: McNemar p (x1e-14) & 2.35 & 2.35 & \textcolor{okgreen}{\textbf{PASS}} \\
+C & Responses in the scoring sheets & 5620 & 5620 & \textcolor{okgreen}{\textbf{PASS}} \\
+C & Factual responses (142 items x 2 forms x 5 models) & 1420 & 1420 & \textcolor{okgreen}{\textbf{PASS}} \\
+C & Original labels: error, clear wording (\%) & 39.9 & 39.9 & \textcolor{okgreen}{\textbf{PASS}} \\
+C & Original labels: error, underspecified wording (\%) & 66.7 & 66.7 & \textcolor{okgreen}{\textbf{PASS}} \\
+C & Original labels: wrong answers without a hedge (\%) & 77.4 & 77.4 & \textcolor{okgreen}{\textbf{PASS}} \\
+C & Mean answer length, anonymous (words) & 188 & 188 & \textcolor{okgreen}{\textbf{PASS}} \\
+C & Mean answer length, patient (words) & 259 & 259 & \textcolor{okgreen}{\textbf{PASS}} \\
+C & Mean answer length, physician (words) & 268 & 268 & \textcolor{okgreen}{\textbf{PASS}} \\
+C & Mean answer length, researcher (words) & 268 & 268 & \textcolor{okgreen}{\textbf{PASS}} \\
+\bottomrule
+\end{longtable}
+}

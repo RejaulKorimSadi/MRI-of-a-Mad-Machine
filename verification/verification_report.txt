@@ -1,0 +1,136 @@
+Study  Claim                                                             Thesis   Recomputed  Result
+---------------------------------------------------------------------------------------------------------
+A      Free recall: responses double-scored                                 400          400  PASS
+A      Free recall: raw agreement (of 400)                                  395          395  PASS
+A      Free recall: Cohen's kappa                                          0.85         0.85  PASS
+A      Free recall: Pythia-2.8B correct of 200                                3            3  PASS
+A      Free recall: Mamba-2.8B correct of 200                                 3            3  PASS
+A      Free recall: paired McNemar p on correctness                         1.0          1.0  PASS
+A      Free recall: factual error on the same questions                     182          182  PASS
+A      Context probe: models run                                             14           14  PASS
+A      Context probe: items per model                                       999          999  PASS
+A      Conflict items followed, pythia-160m                                 312          312  PASS
+A      Conflict items followed, mamba-130m-hf                               271          271  PASS
+A      Conflict items followed, pythia-410m                                 646          646  PASS
+A      Conflict items followed, mamba-370m-hf                               427          427  PASS
+A      Conflict items followed, pythia-1b                                   653          653  PASS
+A      Conflict items followed, mamba-790m-hf                               542          542  PASS
+A      Conflict items followed, pythia-1.4b                                 648          648  PASS
+A      Conflict items followed, mamba-1.4b-hf                               186          186  PASS
+A      1.4B discordant (attention only)                                     462          462  PASS
+A      1.4B discordant (state-space only)                                     0            0  PASS
+A      Conflict items followed, pythia-2.8b                                 650          650  PASS
+A      Conflict items followed, mamba-2.8b-hf                               566          566  PASS
+A      2.8B discordant (attention only)                                      90           90  PASS
+A      2.8B discordant (state-space only)                                     6            6  PASS
+A      2.8B McNemar p (x1e-20)                                              2.5          2.5  PASS
+A      2.8B known facts, items                                              279          279  PASS
+A      2.8B known facts, Pythia followed                                    264          264  PASS
+A      2.8B known facts, Mamba followed                                     210          210  PASS
+A      2.8B known facts McNemar p (x1e-13)                                  9.0          9.0  PASS
+A      2.8B support (true line) Mamba correct, long                         110          110  PASS
+A      pythia-160m/mamba-130m-hf: discordant, attention only                152          152  PASS
+A      pythia-160m/mamba-130m-hf: discordant, state space only              111          111  PASS
+A      pythia-160m/mamba-130m-hf: McNemar p (mantissa)                     1.35         1.35  PASS
+A      pythia-160m/mamba-130m-hf: known-fact items (long)                    15           15  PASS
+A      pythia-160m/mamba-130m-hf: known facts, attention followed             8            8  PASS
+A      pythia-160m/mamba-130m-hf: known facts, state space followed          14           14  PASS
+A      pythia-160m/mamba-130m-hf: known facts p (mantissa)                  3.1          3.1  PASS
+A      pythia-410m/mamba-370m-hf: discordant, attention only                228          228  PASS
+A      pythia-410m/mamba-370m-hf: discordant, state space only                9            9  PASS
+A      pythia-410m/mamba-370m-hf: McNemar p (mantissa)                     5.25         5.25  PASS
+A      pythia-410m/mamba-370m-hf: known-fact items (long)                    87           87  PASS
+A      pythia-410m/mamba-370m-hf: known facts, attention followed            80           80  PASS
+A      pythia-410m/mamba-370m-hf: known facts, state space followed          28           28  PASS
+A      pythia-410m/mamba-370m-hf: known facts p (mantissa)                  2.3          2.3  PASS
+A      pythia-1b/mamba-790m-hf: discordant, attention only                  113          113  PASS
+A      pythia-1b/mamba-790m-hf: discordant, state space only                  2            2  PASS
+A      pythia-1b/mamba-790m-hf: McNemar p (mantissa)                       3.21         3.21  PASS
+A      pythia-1b/mamba-790m-hf: known-fact items (long)                      78           78  PASS
+A      pythia-1b/mamba-790m-hf: known facts, attention followed              73           73  PASS
+A      pythia-1b/mamba-790m-hf: known facts, state space followed            40           40  PASS
+A      pythia-1b/mamba-790m-hf: known facts p (mantissa)                    2.3          2.3  PASS
+A      pythia-1.4b/mamba-1.4b-hf: discordant, attention only                462          462  PASS
+A      pythia-1.4b/mamba-1.4b-hf: discordant, state space only                0            0  PASS
+A      pythia-1.4b/mamba-1.4b-hf: McNemar p (mantissa)                     1.68         1.68  PASS
+A      pythia-1.4b/mamba-1.4b-hf: known-fact items (long)                   243          243  PASS
+A      pythia-1.4b/mamba-1.4b-hf: known facts, attention followed           235          235  PASS
+A      pythia-1.4b/mamba-1.4b-hf: known facts, state space followed          63           63  PASS
+A      pythia-1.4b/mamba-1.4b-hf: known facts p (mantissa)                  3.3          3.3  PASS
+A      pythia-2.8b/mamba-2.8b-hf: discordant, attention only                 90           90  PASS
+A      pythia-2.8b/mamba-2.8b-hf: discordant, state space only                6            6  PASS
+A      pythia-2.8b/mamba-2.8b-hf: McNemar p (mantissa)                      2.5          2.5  PASS
+A      pythia-2.8b/mamba-2.8b-hf: known-fact items (long)                   279          279  PASS
+A      pythia-2.8b/mamba-2.8b-hf: known facts, attention followed           264          264  PASS
+A      pythia-2.8b/mamba-2.8b-hf: known facts, state space followed         210          210  PASS
+A      pythia-2.8b/mamba-2.8b-hf: known facts p (mantissa)                  9.0          9.0  PASS
+A      2.8B short texts: attention followed (of 333)                        332          332  PASS
+A      2.8B short texts: state space followed (of 333)                      312          312  PASS
+A      2.8B long texts: attention followed (of 333)                         318          318  PASS
+A      2.8B long texts: state space followed (of 333)                       254          254  PASS
+A      Pythia-2.8B knew fact without context (%)                           85.6         85.6  PASS
+A      Mamba-2.8B knew fact without context (%)                            92.8         92.8  PASS
+A      Free recall pythia-2.8b: factual errors                              187          187  PASS
+A      Free recall pythia-2.8b: abstentions                                   7            7  PASS
+A      Free recall pythia-2.8b: degenerate                                    3            3  PASS
+A      Free recall mamba-2.8b-hf: factual errors                            195          195  PASS
+A      Free recall mamba-2.8b-hf: abstentions                                 0            0  PASS
+A      Free recall mamba-2.8b-hf: degenerate                                  2            2  PASS
+A      Free recall: McNemar p on factual error                            0.096        0.096  PASS
+A      Free recall: factual error only Pythia                                 5            5  PASS
+A      Free recall: factual error only Mamba                                 13           13  PASS
+A      Other attention models: lowest long follow rate (%)                 98.8         98.8  PASS
+A      Mamba long follow rate at 1.4B (%)                                  29.4         29.4  PASS
+A      Mamba long follow rate at 2.8B (%)                                  76.3         76.3  PASS
+A      Attention model follows more, pythia-410m (1 = yes)                    1            1  PASS
+A      Attention model follows more, pythia-1b (1 = yes)                      1            1  PASS
+A      Attention model follows more, pythia-1.4b (1 = yes)                    1            1  PASS
+A      Attention model follows more, pythia-2.8b (1 = yes)                    1            1  PASS
+A      Group mean long follow rate, attention (%)                          91.1         91.1  PASS
+A      Group mean long follow rate, state-space (%)                        52.9         52.9  PASS
+A      Group Mann-Whitney p                                               0.007        0.007  PASS
+B      Rows double-scored for downstream error                              333          333  PASS
+B      Kappa, downstream error (dichotomised)                              0.94         0.94  PASS
+B      Kappa, isolated correctness                                          1.0          1.0  PASS
+B      allam-2-7b: items                                                     69           69  PASS
+B      allam-2-7b: later error before (%)                                  94.2         94.2  PASS
+B      allam-2-7b: later error after (%)                                   50.7         50.7  PASS
+B      openai/gpt-oss-120b: items                                            18           18  PASS
+B      openai/gpt-oss-120b: later error before (%)                         77.8         77.8  PASS
+B      openai/gpt-oss-120b: later error after (%)                          44.4         44.4  PASS
+B      qwen/qwen3.6-27b: items                                               19           19  PASS
+B      qwen/qwen3.6-27b: later error before (%)                           100.0        100.0  PASS
+B      qwen/qwen3.6-27b: later error after (%)                             42.1         42.1  PASS
+B      Fully repaired items                                                  50           50  PASS
+B      Fully repaired items known in isolation                                1            1  PASS
+B      Refusals after correct fact                                            5            5  PASS
+B      Refusals after wrong fact                                             12           12  PASS
+B      Failing claims per answer before                                     1.7          1.7  PASS
+B      Failing claims per answer after                                     0.75         0.75  PASS
+B      Baseline answers that corrected themselves                             0            0  PASS
+B      Items analysed                                                       111          111  PASS
+B      Paired items for repair test                                         106          106  PASS
+B      Downstream error before repair (%)                                  92.5         92.5  PASS
+B      Downstream error after repair (%)                                   48.1         48.1  PASS
+B      Items fixed by repair                                                 50           50  PASS
+B      Items broken by repair                                                 3            3  PASS
+B      Repair McNemar p (x1e-12)                                            5.5          5.5  PASS
+B      Correct in isolation (of 111)                                          2            2  PASS
+B      Control comparison, items                                             97           97  PASS
+B      Error-free after correct fact (%)                                   54.6         54.6  PASS
+B      Error-free after wrong fact (%)                                     60.8         60.8  PASS
+B      Correct vs wrong fact McNemar p                                     0.38         0.38  PASS
+B      Second annotator: before (%)                                        97.2         97.2  PASS
+B      Second annotator: after (%)                                         50.0         50.0  PASS
+B      Second annotator: McNemar p (x1e-14)                                2.35         2.35  PASS
+C      Responses in the scoring sheets                                     5620         5620  PASS
+C      Factual responses (142 items x 2 forms x 5 models)                  1420         1420  PASS
+C      Original labels: error, clear wording (%)                           39.9         39.9  PASS
+C      Original labels: error, underspecified wording (%)                  66.7         66.7  PASS
+C      Original labels: wrong answers without a hedge (%)                  77.4         77.4  PASS
+C      Mean answer length, anonymous (words)                                188          188  PASS
+C      Mean answer length, patient (words)                                  259          259  PASS
+C      Mean answer length, physician (words)                                268          268  PASS
+C      Mean answer length, researcher (words)                               268          268  PASS
+---------------------------------------------------------------------------------------------------------
+132 checks, 132 passed, 0 failed

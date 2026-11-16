@@ -1,0 +1,30 @@
+{
+  "title": "MRI of a Mad Machine: The Structural Origins of Hallucination",
+  "description": "B.Sc. thesis: three controlled studies on which part of a language model turns a defect into a confident error, with all data, code and a script that recomputes every number.",
+  "upload_type": "dataset",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "hallucination",
+    "large language models",
+    "attention",
+    "state-space models",
+    "decoding",
+    "uncertainty",
+    "reproducibility"
+  ],
+  "creators": [
+    {
+      "name": "Sadi, Md. Rejaul Korim",
+      "affiliation": "Metropolitan University, Sylhet"
+    },
+    {
+      "name": "Tasin, Toufiqur Rahman",
+      "affiliation": "Metropolitan University, Sylhet"
+    },
+    {
+      "name": "Chowdhury, Dewan Fahad",
+      "affiliation": "Metropolitan University, Sylhet"
+    }
+  ]
+}

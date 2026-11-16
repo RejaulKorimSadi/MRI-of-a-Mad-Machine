@@ -1,0 +1,926 @@
+[
+ {
+  "study": "A",
+  "claim": "Free recall: responses double-scored",
+  "thesis": 400,
+  "recomputed": 400,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Free recall: raw agreement (of 400)",
+  "thesis": 395,
+  "recomputed": 395,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Free recall: Cohen's kappa",
+  "thesis": 0.85,
+  "recomputed": 0.85,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Free recall: Pythia-2.8B correct of 200",
+  "thesis": 3,
+  "recomputed": 3,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Free recall: Mamba-2.8B correct of 200",
+  "thesis": 3,
+  "recomputed": 3,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Free recall: paired McNemar p on correctness",
+  "thesis": 1.0,
+  "recomputed": 1.0,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Free recall: factual error on the same questions",
+  "thesis": 182,
+  "recomputed": 182,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Context probe: models run",
+  "thesis": 14,
+  "recomputed": 14,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Context probe: items per model",
+  "thesis": 999,
+  "recomputed": 999,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Conflict items followed, pythia-160m",
+  "thesis": 312,
+  "recomputed": 312,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Conflict items followed, mamba-130m-hf",
+  "thesis": 271,
+  "recomputed": 271,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Conflict items followed, pythia-410m",
+  "thesis": 646,
+  "recomputed": 646,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Conflict items followed, mamba-370m-hf",
+  "thesis": 427,
+  "recomputed": 427,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Conflict items followed, pythia-1b",
+  "thesis": 653,
+  "recomputed": 653,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Conflict items followed, mamba-790m-hf",
+  "thesis": 542,
+  "recomputed": 542,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Conflict items followed, pythia-1.4b",
+  "thesis": 648,
+  "recomputed": 648,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Conflict items followed, mamba-1.4b-hf",
+  "thesis": 186,
+  "recomputed": 186,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "1.4B discordant (attention only)",
+  "thesis": 462,
+  "recomputed": 462,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "1.4B discordant (state-space only)",
+  "thesis": 0,
+  "recomputed": 0,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Conflict items followed, pythia-2.8b",
+  "thesis": 650,
+  "recomputed": 650,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Conflict items followed, mamba-2.8b-hf",
+  "thesis": 566,
+  "recomputed": 566,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "2.8B discordant (attention only)",
+  "thesis": 90,
+  "recomputed": 90,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "2.8B discordant (state-space only)",
+  "thesis": 6,
+  "recomputed": 6,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "2.8B McNemar p (x1e-20)",
+  "thesis": 2.5,
+  "recomputed": 2.5,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "2.8B known facts, items",
+  "thesis": 279,
+  "recomputed": 279,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "2.8B known facts, Pythia followed",
+  "thesis": 264,
+  "recomputed": 264,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "2.8B known facts, Mamba followed",
+  "thesis": 210,
+  "recomputed": 210,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "2.8B known facts McNemar p (x1e-13)",
+  "thesis": 9.0,
+  "recomputed": 9.0,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "2.8B support (true line) Mamba correct, long",
+  "thesis": 110,
+  "recomputed": 110,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-160m/mamba-130m-hf: discordant, attention only",
+  "thesis": 152,
+  "recomputed": 152,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-160m/mamba-130m-hf: discordant, state space only",
+  "thesis": 111,
+  "recomputed": 111,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-160m/mamba-130m-hf: McNemar p (mantissa)",
+  "thesis": 1.35,
+  "recomputed": 1.35,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-160m/mamba-130m-hf: known-fact items (long)",
+  "thesis": 15,
+  "recomputed": 15,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-160m/mamba-130m-hf: known facts, attention followed",
+  "thesis": 8,
+  "recomputed": 8,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-160m/mamba-130m-hf: known facts, state space followed",
+  "thesis": 14,
+  "recomputed": 14,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-160m/mamba-130m-hf: known facts p (mantissa)",
+  "thesis": 3.1,
+  "recomputed": 3.1,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-410m/mamba-370m-hf: discordant, attention only",
+  "thesis": 228,
+  "recomputed": 228,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-410m/mamba-370m-hf: discordant, state space only",
+  "thesis": 9,
+  "recomputed": 9,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-410m/mamba-370m-hf: McNemar p (mantissa)",
+  "thesis": 5.25,
+  "recomputed": 5.25,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-410m/mamba-370m-hf: known-fact items (long)",
+  "thesis": 87,
+  "recomputed": 87,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-410m/mamba-370m-hf: known facts, attention followed",
+  "thesis": 80,
+  "recomputed": 80,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-410m/mamba-370m-hf: known facts, state space followed",
+  "thesis": 28,
+  "recomputed": 28,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-410m/mamba-370m-hf: known facts p (mantissa)",
+  "thesis": 2.3,
+  "recomputed": 2.3,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-1b/mamba-790m-hf: discordant, attention only",
+  "thesis": 113,
+  "recomputed": 113,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-1b/mamba-790m-hf: discordant, state space only",
+  "thesis": 2,
+  "recomputed": 2,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-1b/mamba-790m-hf: McNemar p (mantissa)",
+  "thesis": 3.21,
+  "recomputed": 3.21,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-1b/mamba-790m-hf: known-fact items (long)",
+  "thesis": 78,
+  "recomputed": 78,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-1b/mamba-790m-hf: known facts, attention followed",
+  "thesis": 73,
+  "recomputed": 73,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-1b/mamba-790m-hf: known facts, state space followed",
+  "thesis": 40,
+  "recomputed": 40,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-1b/mamba-790m-hf: known facts p (mantissa)",
+  "thesis": 2.3,
+  "recomputed": 2.3,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-1.4b/mamba-1.4b-hf: discordant, attention only",
+  "thesis": 462,
+  "recomputed": 462,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-1.4b/mamba-1.4b-hf: discordant, state space only",
+  "thesis": 0,
+  "recomputed": 0,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-1.4b/mamba-1.4b-hf: McNemar p (mantissa)",
+  "thesis": 1.68,
+  "recomputed": 1.68,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-1.4b/mamba-1.4b-hf: known-fact items (long)",
+  "thesis": 243,
+  "recomputed": 243,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-1.4b/mamba-1.4b-hf: known facts, attention followed",
+  "thesis": 235,
+  "recomputed": 235,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-1.4b/mamba-1.4b-hf: known facts, state space followed",
+  "thesis": 63,
+  "recomputed": 63,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-1.4b/mamba-1.4b-hf: known facts p (mantissa)",
+  "thesis": 3.3,
+  "recomputed": 3.3,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-2.8b/mamba-2.8b-hf: discordant, attention only",
+  "thesis": 90,
+  "recomputed": 90,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-2.8b/mamba-2.8b-hf: discordant, state space only",
+  "thesis": 6,
+  "recomputed": 6,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-2.8b/mamba-2.8b-hf: McNemar p (mantissa)",
+  "thesis": 2.5,
+  "recomputed": 2.5,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-2.8b/mamba-2.8b-hf: known-fact items (long)",
+  "thesis": 279,
+  "recomputed": 279,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-2.8b/mamba-2.8b-hf: known facts, attention followed",
+  "thesis": 264,
+  "recomputed": 264,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-2.8b/mamba-2.8b-hf: known facts, state space followed",
+  "thesis": 210,
+  "recomputed": 210,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "pythia-2.8b/mamba-2.8b-hf: known facts p (mantissa)",
+  "thesis": 9.0,
+  "recomputed": 9.0,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "2.8B short texts: attention followed (of 333)",
+  "thesis": 332,
+  "recomputed": 332,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "2.8B short texts: state space followed (of 333)",
+  "thesis": 312,
+  "recomputed": 312,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "2.8B long texts: attention followed (of 333)",
+  "thesis": 318,
+  "recomputed": 318,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "2.8B long texts: state space followed (of 333)",
+  "thesis": 254,
+  "recomputed": 254,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Pythia-2.8B knew fact without context (%)",
+  "thesis": 85.6,
+  "recomputed": 85.6,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Mamba-2.8B knew fact without context (%)",
+  "thesis": 92.8,
+  "recomputed": 92.8,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Free recall pythia-2.8b: factual errors",
+  "thesis": 187,
+  "recomputed": 187,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Free recall pythia-2.8b: abstentions",
+  "thesis": 7,
+  "recomputed": 7,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Free recall pythia-2.8b: degenerate",
+  "thesis": 3,
+  "recomputed": 3,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Free recall mamba-2.8b-hf: factual errors",
+  "thesis": 195,
+  "recomputed": 195,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Free recall mamba-2.8b-hf: abstentions",
+  "thesis": 0,
+  "recomputed": 0,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Free recall mamba-2.8b-hf: degenerate",
+  "thesis": 2,
+  "recomputed": 2,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Free recall: McNemar p on factual error",
+  "thesis": 0.096,
+  "recomputed": 0.096,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Free recall: factual error only Pythia",
+  "thesis": 5,
+  "recomputed": 5,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Free recall: factual error only Mamba",
+  "thesis": 13,
+  "recomputed": 13,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Other attention models: lowest long follow rate (%)",
+  "thesis": 98.8,
+  "recomputed": 98.8,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Mamba long follow rate at 1.4B (%)",
+  "thesis": 29.4,
+  "recomputed": 29.4,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Mamba long follow rate at 2.8B (%)",
+  "thesis": 76.3,
+  "recomputed": 76.3,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Attention model follows more, pythia-410m (1 = yes)",
+  "thesis": 1,
+  "recomputed": 1,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Attention model follows more, pythia-1b (1 = yes)",
+  "thesis": 1,
+  "recomputed": 1,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Attention model follows more, pythia-1.4b (1 = yes)",
+  "thesis": 1,
+  "recomputed": 1,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Attention model follows more, pythia-2.8b (1 = yes)",
+  "thesis": 1,
+  "recomputed": 1,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Group mean long follow rate, attention (%)",
+  "thesis": 91.1,
+  "recomputed": 91.1,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Group mean long follow rate, state-space (%)",
+  "thesis": 52.9,
+  "recomputed": 52.9,
+  "result": "PASS"
+ },
+ {
+  "study": "A",
+  "claim": "Group Mann-Whitney p",
+  "thesis": 0.007,
+  "recomputed": 0.007,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "Rows double-scored for downstream error",
+  "thesis": 333,
+  "recomputed": 333,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "Kappa, downstream error (dichotomised)",
+  "thesis": 0.94,
+  "recomputed": 0.94,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "Kappa, isolated correctness",
+  "thesis": 1.0,
+  "recomputed": 1.0,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "allam-2-7b: items",
+  "thesis": 69,
+  "recomputed": 69,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "allam-2-7b: later error before (%)",
+  "thesis": 94.2,
+  "recomputed": 94.2,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "allam-2-7b: later error after (%)",
+  "thesis": 50.7,
+  "recomputed": 50.7,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "openai/gpt-oss-120b: items",
+  "thesis": 18,
+  "recomputed": 18,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "openai/gpt-oss-120b: later error before (%)",
+  "thesis": 77.8,
+  "recomputed": 77.8,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "openai/gpt-oss-120b: later error after (%)",
+  "thesis": 44.4,
+  "recomputed": 44.4,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "qwen/qwen3.6-27b: items",
+  "thesis": 19,
+  "recomputed": 19,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "qwen/qwen3.6-27b: later error before (%)",
+  "thesis": 100.0,
+  "recomputed": 100.0,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "qwen/qwen3.6-27b: later error after (%)",
+  "thesis": 42.1,
+  "recomputed": 42.1,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "Fully repaired items",
+  "thesis": 50,
+  "recomputed": 50,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "Fully repaired items known in isolation",
+  "thesis": 1,
+  "recomputed": 1,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "Refusals after correct fact",
+  "thesis": 5,
+  "recomputed": 5,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "Refusals after wrong fact",
+  "thesis": 12,
+  "recomputed": 12,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "Failing claims per answer before",
+  "thesis": 1.7,
+  "recomputed": 1.7,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "Failing claims per answer after",
+  "thesis": 0.75,
+  "recomputed": 0.75,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "Baseline answers that corrected themselves",
+  "thesis": 0,
+  "recomputed": 0,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "Items analysed",
+  "thesis": 111,
+  "recomputed": 111,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "Paired items for repair test",
+  "thesis": 106,
+  "recomputed": 106,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "Downstream error before repair (%)",
+  "thesis": 92.5,
+  "recomputed": 92.5,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "Downstream error after repair (%)",
+  "thesis": 48.1,
+  "recomputed": 48.1,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "Items fixed by repair",
+  "thesis": 50,
+  "recomputed": 50,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "Items broken by repair",
+  "thesis": 3,
+  "recomputed": 3,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "Repair McNemar p (x1e-12)",
+  "thesis": 5.5,
+  "recomputed": 5.5,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "Correct in isolation (of 111)",
+  "thesis": 2,
+  "recomputed": 2,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "Control comparison, items",
+  "thesis": 97,
+  "recomputed": 97,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "Error-free after correct fact (%)",
+  "thesis": 54.6,
+  "recomputed": 54.6,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "Error-free after wrong fact (%)",
+  "thesis": 60.8,
+  "recomputed": 60.8,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "Correct vs wrong fact McNemar p",
+  "thesis": 0.38,
+  "recomputed": 0.38,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "Second annotator: before (%)",
+  "thesis": 97.2,
+  "recomputed": 97.2,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "Second annotator: after (%)",
+  "thesis": 50.0,
+  "recomputed": 50.0,
+  "result": "PASS"
+ },
+ {
+  "study": "B",
+  "claim": "Second annotator: McNemar p (x1e-14)",
+  "thesis": 2.35,
+  "recomputed": 2.35,
+  "result": "PASS"
+ },
+ {
+  "study": "C",
+  "claim": "Responses in the scoring sheets",
+  "thesis": 5620,
+  "recomputed": 5620,
+  "result": "PASS"
+ },
+ {
+  "study": "C",
+  "claim": "Factual responses (142 items x 2 forms x 5 models)",
+  "thesis": 1420,
+  "recomputed": 1420,
+  "result": "PASS"
+ },
+ {
+  "study": "C",
+  "claim": "Original labels: error, clear wording (%)",
+  "thesis": 39.9,
+  "recomputed": 39.9,
+  "result": "PASS"
+ },
+ {
+  "study": "C",
+  "claim": "Original labels: error, underspecified wording (%)",
+  "thesis": 66.7,
+  "recomputed": 66.7,
+  "result": "PASS"
+ },
+ {
+  "study": "C",
+  "claim": "Original labels: wrong answers without a hedge (%)",
+  "thesis": 77.4,
+  "recomputed": 77.4,
+  "result": "PASS"
+ },
+ {
+  "study": "C",
+  "claim": "Mean answer length, anonymous (words)",
+  "thesis": 188,
+  "recomputed": 188,
+  "result": "PASS"
+ },
+ {
+  "study": "C",
+  "claim": "Mean answer length, patient (words)",
+  "thesis": 259,
+  "recomputed": 259,
+  "result": "PASS"
+ },
+ {
+  "study": "C",
+  "claim": "Mean answer length, physician (words)",
+  "thesis": 268,
+  "recomputed": 268,
+  "result": "PASS"
+ },
+ {
+  "study": "C",
+  "claim": "Mean answer length, researcher (words)",
+  "thesis": 268,
+  "recomputed": 268,
+  "result": "PASS"
+ }
+]
